@@ -1,0 +1,5327 @@
+{
+  "runId": "cellbig-wechat-card-20261116",
+  "scope": "single-component",
+  "sessionId": "b59f7ad6-81c2-4cac-af72-32bbc240a850",
+  "fileKey": "EENvyucmDH5rGsEjnglkib",
+  "pageId": "0:1",
+  "sourceFiles": [
+    {
+      "path": "90_작업 공간/중국출장/명함/셀빅 명함 가이드_210430.pdf",
+      "sha256": "38943212153c618095856d3179c459007f4496fe33576d18637e99dcd00b2cba"
+    },
+    {
+      "path": "90_작업 공간/중국출장/명함/Cellbig_logo_white.png",
+      "sha256": "07fc51f0f8357411c5abdbaf6d5f9656fa6777230a60f12fc008c35484edec29"
+    },
+    {
+      "path": "90_작업 공간/중국출장/명함/QR_Cellbig_website.png",
+      "sha256": "26caf7157653608da8f147132833cbbda34119e0ad7d13a5298c203d2e7f24ab"
+    }
+  ],
+  "extractionScope": {
+    "source": "명함 가이드 PDF 1쪽 전체, 제공 로고 PNG와 홈페이지 QR PNG",
+    "criterion": "인쇄 사양, 앞면과 뒷면, 서체와 색상 등 의미가 다른 지침 단위별 추출"
+  },
+  "sourceUnits": [
+    {
+      "id": "S01",
+      "location": "PDF 1쪽 규격",
+      "content": "실물 명함 90 x 50 mm"
+    },
+    {
+      "id": "S02",
+      "location": "PDF 1쪽 앞면 예시",
+      "content": "흰 바탕, 검정과 회색 텍스트, 마젠타 연락처 레이블"
+    },
+    {
+      "id": "S03",
+      "location": "PDF 1쪽 뒷면 예시",
+      "content": "M 100 마젠타 바탕에 흰색 로고 중앙 배치"
+    },
+    {
+      "id": "S04",
+      "location": "PDF 1쪽 성명, 부서, 직책",
+      "content": "국문 Noto Sans CJK KR Bold와 Medium, 영문 Roboto Bold와 Regular"
+    },
+    {
+      "id": "S05",
+      "location": "PDF 1쪽 예시 정보",
+      "content": "홍길동, 연락처와 QR은 서식 설명용 예시이며 실사용 직원 정보로 채택하지 않음"
+    },
+    {
+      "id": "S06",
+      "location": "로고 PNG 전체",
+      "content": "5358 x 1532 RGBA 흰색 로고 원본, 원형과 가로세로 비율 유지"
+    },
+    {
+      "id": "S07",
+      "location": "QR_Cellbig_website.png 전체",
+      "content": "709 x 709 PNG, http://www.cellbig.com, 25 x 25 모듈의 검정 QR 원본"
+    }
+  ],
+  "designApplication": [
+    {
+      "sourceUnits": [
+        "S01"
+      ],
+      "application": "세로 1080 x 1350 (4:5), 여백 포함 QR 전체 영역 320 x 320으로 재구성",
+      "status": "사용자가 반영을 지시한 디자인 시안. 위챗 공식 권장 규격과 실사용 인식 검증을 의미하지 않음"
+    },
+    {
+      "sourceUnits": [
+        "S02",
+        "S03"
+      ],
+      "application": "상단 마젠타 로고 영역과 하단 흰색 정보 및 QR 영역 결합. 화면 색상은 PDF 렌더의 RGB 230,0,126을 사용",
+      "status": "화면용 적용"
+    },
+    {
+      "sourceUnits": [
+        "S04"
+      ],
+      "application": "영문 Roboto 유지, 국문 Noto Sans KR로 대응, 중국어 QR 안내는 Noto Sans SC 사용",
+      "status": "사용 가능 서체에 따른 대응"
+    },
+    {
+      "sourceUnits": [
+        "S05"
+      ],
+      "application": "이름과 직함을 교체용 텍스트로, QR은 교체용 이미지 영역으로 구성",
+      "status": "개인별 실물 입력 전 템플릿"
+    },
+    {
+      "sourceUnits": [
+        "S06"
+      ],
+      "application": "제공 PNG를 Figma 이미지 채우기로 업로드",
+      "status": "원본 사용"
+    },
+    {
+      "sourceUnits": [
+        "S07"
+      ],
+      "application": "검정 원본 PNG를 FIT으로 업로드. 코드 본체 150 x 150에 사방 24px를 두어 198 x 198 영역 구성. 색상 변경 없음",
+      "status": "사용자 지시에 따른 상단 배치, 흰색 변환은 사용자 담당"
+    }
+  ],
+  "discovery": {
+    "existingPageNodes": 0,
+    "localVariables": 0,
+    "localTextStyles": 0,
+    "librarySearch": "일반 앱 카드만 확인되어 회사 전용 명함과 호환되는 자산 없음"
+  },
+  "acceptance": [
+    "주요 텍스트를 편집 가능한 레이어와 컴포넌트 속성으로 구성",
+    "직원별 QR을 넣을 이미지 영역 확보",
+    "원본 컴포넌트와 내보내기용 인스턴스 분리",
+    "원본 로고 비율 및 마젠타와 흰색 대비 유지",
+    "최종 인스턴스의 잘림, 겹침과 가독성 시각 검수"
+  ],
+  "entities": {
+    "createdNodeIds": [
+      "5:28",
+      "5:29",
+      "5:30",
+      "5:31",
+      "5:32",
+      "5:33",
+      "5:34",
+      "5:35",
+      "5:36",
+      "5:37",
+      "5:38",
+      "5:39",
+      "5:40",
+      "5:41",
+      "5:42",
+      "5:43",
+      "5:44",
+      "5:45",
+      "5:46",
+      "5:47",
+      "5:48",
+      "5:49",
+      "5:50",
+      "I5:50;5:29",
+      "I5:50;5:30",
+      "I5:50;5:31",
+      "I5:50;5:32",
+      "I5:50;5:33",
+      "I5:50;5:34",
+      "I5:50;5:35",
+      "I5:50;5:36",
+      "I5:50;5:37",
+      "I5:50;5:38",
+      "I5:50;5:39",
+      "I5:50;5:40",
+      "I5:50;5:41",
+      "I5:50;5:42",
+      "I5:50;5:43",
+      "I5:50;5:44",
+      "I5:50;5:45",
+      "I5:50;5:46",
+      "I5:50;5:47",
+      "I5:50;5:48",
+      "5:71",
+      "5:72",
+      "5:73",
+      "16:24",
+      "16:25",
+      "16:26",
+      "16:27",
+      "19:28",
+      "19:29",
+      "19:30",
+      "24:30",
+      "35:28",
+      "35:29",
+      "35:30",
+      "35:31",
+      "35:32",
+      "35:33"
+    ],
+    "mutatedNodeIds": [
+      "5:28",
+      "5:50",
+      "5:73",
+      "5:29",
+      "35:28",
+      "5:30",
+      "35:29",
+      "35:30",
+      "35:31",
+      "35:32",
+      "35:33",
+      "5:31",
+      "5:32",
+      "5:33",
+      "5:34",
+      "5:35",
+      "5:36",
+      "5:37",
+      "19:29",
+      "19:30",
+      "16:27",
+      "5:39",
+      "16:26",
+      "5:38",
+      "5:40",
+      "5:41",
+      "5:42",
+      "5:43",
+      "5:44",
+      "5:45",
+      "5:46",
+      "24:30",
+      "5:48",
+      "5:47",
+      "I5:50;5:29",
+      "I5:50;35:28",
+      "I5:50;5:30",
+      "I5:50;35:29",
+      "I5:50;35:30",
+      "I5:50;35:31",
+      "I5:50;35:32",
+      "I5:50;35:33",
+      "I5:50;5:31",
+      "I5:50;5:32",
+      "I5:50;5:33",
+      "I5:50;5:34",
+      "I5:50;5:35",
+      "I5:50;5:36",
+      "I5:50;5:37",
+      "I5:50;19:29",
+      "I5:50;19:30",
+      "I5:50;16:27",
+      "I5:50;5:39",
+      "I5:50;16:26",
+      "I5:50;5:38",
+      "I5:50;5:40",
+      "I5:50;5:41",
+      "I5:50;5:42",
+      "I5:50;5:46",
+      "I5:50;24:30",
+      "I5:50;5:48",
+      "I5:50;5:47"
+    ],
+    "componentId": "5:28",
+    "headerId": "5:29",
+    "logoNodeId": "5:30",
+    "reviewFrameId": "5:49",
+    "instanceId": "5:50",
+    "qrFrameId": "5:42",
+    "propertyKeys": {
+      "이름 EN": "이름 EN#5:0",
+      "이름 KR": "이름 KR#5:1",
+      "한글 이름 표시": "한글 이름 표시#5:4",
+      "QR 안내 표시": "QR 안내 표시#5:5",
+      "소속 CN": "소속 CN#16:0",
+      "직급 CN": "직급 CN#5:2",
+      "소속 EN": "소속 EN#16:1",
+      "직급 EN": "직급 EN#5:3",
+      "소속 KR": "소속 KR#19:0",
+      "직급 KR": "직급 KR#19:1"
+    },
+    "collectionId": "VariableCollectionId:5:2",
+    "modeIds": {
+      "Default": "5:0"
+    },
+    "variableIds": {
+      "primitive/magenta": "VariableID:5:3",
+      "primitive/white": "VariableID:5:4",
+      "primitive/ink": "VariableID:5:5",
+      "primitive/gray": "VariableID:5:6",
+      "primitive/line": "VariableID:5:7",
+      "color/brand": "VariableID:5:8",
+      "color/surface": "VariableID:5:9",
+      "color/text-primary": "VariableID:5:10",
+      "color/text-secondary": "VariableID:5:11",
+      "color/border": "VariableID:5:12",
+      "spacing/8": "VariableID:5:13",
+      "spacing/24": "VariableID:5:14",
+      "spacing/40": "VariableID:5:15",
+      "spacing/64": "VariableID:5:16",
+      "spacing/96": "VariableID:5:17",
+      "color/on-brand": "VariableID:35:25"
+    },
+    "styleIds": {
+      "Company": "S:6f0e474571c29684441e732f1c1fe23130c099ab,",
+      "Name EN": "S:f676e7d9682d21be890a27fdda9b013b3b2c25f6,",
+      "Name KR": "S:2c969bed0d429ad2f5d1ac53f9fcd1d9f1f2e8bf,",
+      "Title EN": "S:96a450824be377a63069fd93b782b10ccc2a03a1,",
+      "QR Title": "S:5efdfb986f6551bbe2d7fbfe876dac0fbf135e42,",
+      "QR Hint": "S:78b77cf816ada2eb686fcc76e74a76da098434b2,",
+      "CTA CN": "S:ee87362cf100071d12add05e83ae963c4385db64,",
+      "CTA EN": "S:48531e23da99afc9d0632991cd11b2cb51635e46,",
+      "Canvas label": "S:315f4b2c61ff109a10b01002960b17d27b0cb646,",
+      "departmentCN": "S:84e33c71cfd502355b1f617acc46e0265332147d,",
+      "departmentEN": "S:e02a02971f0ea038a100fa77b4096133e06e529a,",
+      "roleCN": "S:004362deb6a49679c4b33c1a87d4a0e1940cab4a,",
+      "roleEN": "S:96a450824be377a63069fd93b782b10ccc2a03a1,",
+      "departmentKR": "S:d8ce856bd018d0d29f91452e5a7547cca91a2311,",
+      "rankKR": "S:dfe161ae1aca279ebf8bad6b54f0bb0de84b8663,",
+      "qrCaptionKR": "S:1834d6a5fe4487e1173566b5d869fa8c5478814e,",
+      "websiteURL": "S:70b15147334c292cc31da9fb7fd7e44183c6bdfc,",
+      "websiteLabel": "S:2130a66775b55d582cfd1072b6d37e8a41f0b44e,"
+    },
+    "componentBounds": {
+      "x": 120,
+      "y": 160,
+      "width": 1080,
+      "height": 1350
+    },
+    "profileHeight": 396,
+    "qrBounds": {
+      "width": 320,
+      "height": 320
+    },
+    "textNodeCount": 16,
+    "departmentIds": {
+      "cn": "16:26",
+      "en": "16:27",
+      "kr": "19:29"
+    },
+    "qrCaptionKRId": "24:30",
+    "gridId": "5:37",
+    "roleIds": {
+      "kr": "19:30",
+      "en": "5:39",
+      "cn": "5:38"
+    },
+    "removedNodeIds": [
+      "19:28",
+      "I5:50;19:28",
+      "16:25",
+      "I5:50;16:25",
+      "16:24",
+      "I5:50;16:24"
+    ],
+    "websiteNodeIds": {
+      "brandLeft": "35:28",
+      "brandRight": "35:30",
+      "websiteUrl": "35:29",
+      "websiteQrFrame": "35:31",
+      "websiteQrImage": "35:32",
+      "websiteLabel": "35:33"
+    }
+  },
+  "completedSteps": [
+    "source-review",
+    "discovery",
+    "foundations-created",
+    "component-and-instance-created",
+    "logo-uploaded",
+    "properties-and-layout-verified",
+    "visual-review-passed",
+    "4:5-and-320px-qr-updated-and-visually-reviewed",
+    "independent-department-and-rank-properties-verified",
+    "korean-english-chinese-order-and-overflow-verified",
+    "three-language-qr-caption-and-balanced-layout-verified",
+    "shared-grid-content-width-and-row-height-verified",
+    "website-url-and-original-qr-placed-and-export-decoded"
+  ],
+  "pendingValidations": [],
+  "validation": {
+    "scope": "상단 브랜드 영역에 홈페이지 주소와 검정 QR 원본 추가",
+    "propertyDefinitions": {
+      "이름 EN#5:0": {
+        "type": "TEXT",
+        "defaultValue": "NAME SURNAME"
+      },
+      "이름 KR#5:1": {
+        "type": "TEXT",
+        "defaultValue": "이름"
+      },
+      "직급 CN#5:2": {
+        "type": "TEXT",
+        "defaultValue": "职位"
+      },
+      "직급 EN#5:3": {
+        "type": "TEXT",
+        "defaultValue": "Job Title"
+      },
+      "한글 이름 표시#5:4": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "QR 안내 표시#5:5": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "소속 CN#16:0": {
+        "type": "TEXT",
+        "defaultValue": "所属部门"
+      },
+      "소속 EN#16:1": {
+        "type": "TEXT",
+        "defaultValue": "Department"
+      },
+      "소속 KR#19:0": {
+        "type": "TEXT",
+        "defaultValue": "소속 부서"
+      },
+      "직급 KR#19:1": {
+        "type": "TEXT",
+        "defaultValue": "직급"
+      }
+    },
+    "instanceProperties": {
+      "직급 KR#19:1": {
+        "type": "TEXT",
+        "value": "과장"
+      },
+      "소속 KR#19:0": {
+        "type": "TEXT",
+        "value": "AI융합본부"
+      },
+      "소속 CN#16:0": {
+        "type": "TEXT",
+        "value": "人工智能融合事业部"
+      },
+      "QR 안내 표시#5:5": {
+        "type": "BOOLEAN",
+        "value": false
+      },
+      "직급 EN#5:3": {
+        "type": "TEXT",
+        "value": "Manager"
+      },
+      "직급 CN#5:2": {
+        "type": "TEXT",
+        "value": "经理"
+      },
+      "한글 이름 표시#5:4": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "소속 EN#16:1": {
+        "type": "TEXT",
+        "value": "AI Convergence Division"
+      },
+      "이름 KR#5:1": {
+        "type": "TEXT",
+        "value": "조상연"
+      },
+      "이름 EN#5:0": {
+        "type": "TEXT",
+        "value": "Jo Sangyeon"
+      }
+    },
+    "staffPropertiesPreserved": true,
+    "staffQrFillsPreserved": true,
+    "staffGrid": {
+      "id": "I5:50;5:37",
+      "width": 888,
+      "height": 144,
+      "layoutMode": "GRID",
+      "columnSizes": [
+        {
+          "type": "HUG",
+          "value": 1
+        },
+        {
+          "type": "HUG",
+          "value": 1
+        }
+      ],
+      "rowSizes": [
+        {
+          "type": "HUG",
+          "value": 1
+        },
+        {
+          "type": "HUG",
+          "value": 1
+        },
+        {
+          "type": "HUG",
+          "value": 1
+        }
+      ],
+      "columnGap": 24,
+      "rowGap": 8,
+      "children": [
+        {
+          "id": "I5:50;19:29",
+          "name": "소속 KR / 변경",
+          "text": "AI융합본부",
+          "x": 0,
+          "y": 0,
+          "width": 147,
+          "height": 44,
+          "row": 0,
+          "column": 0,
+          "propertyReferences": {
+            "characters": "소속 KR#19:0"
+          }
+        },
+        {
+          "id": "I5:50;19:30",
+          "name": "직급 KR / 변경",
+          "text": "과장",
+          "x": 347,
+          "y": 0,
+          "width": 59,
+          "height": 44,
+          "row": 0,
+          "column": 1,
+          "propertyReferences": {
+            "characters": "직급 KR#19:1"
+          }
+        },
+        {
+          "id": "I5:50;16:27",
+          "name": "소속 EN / 변경",
+          "text": "AI Convergence Division",
+          "x": 0,
+          "y": 52,
+          "width": 323,
+          "height": 40,
+          "row": 1,
+          "column": 0,
+          "propertyReferences": {
+            "characters": "소속 EN#16:1"
+          }
+        },
+        {
+          "id": "I5:50;5:39",
+          "name": "직급 EN / 변경",
+          "text": "Manager",
+          "x": 347,
+          "y": 52,
+          "width": 120,
+          "height": 40,
+          "row": 1,
+          "column": 1,
+          "propertyReferences": {
+            "characters": "직급 EN#5:3"
+          }
+        },
+        {
+          "id": "I5:50;16:26",
+          "name": "소속 CN / 변경",
+          "text": "人工智能融合事业部",
+          "x": 0,
+          "y": 100,
+          "width": 288,
+          "height": 44,
+          "row": 2,
+          "column": 0,
+          "propertyReferences": {
+            "characters": "소속 CN#16:0"
+          }
+        },
+        {
+          "id": "I5:50;5:38",
+          "name": "직급 CN / 변경",
+          "text": "经理",
+          "x": 347,
+          "y": 100,
+          "width": 64,
+          "height": 44,
+          "row": 2,
+          "column": 1,
+          "propertyReferences": {
+            "characters": "직급 CN#5:2"
+          }
+        }
+      ],
+      "roleXs": [
+        347,
+        347,
+        347
+      ]
+    },
+    "layoutTest": {
+      "roleXs": [
+        684,
+        684,
+        684
+      ],
+      "gridHeight": 184,
+      "outOfBounds": []
+    },
+    "headerBounds": {
+      "x": 120,
+      "y": 160,
+      "width": 1080,
+      "height": 288
+    },
+    "logo": {
+      "bounds": {
+        "x": 216,
+        "y": 197.65882873535156,
+        "width": 520,
+        "height": 148.68234252929688
+      },
+      "fills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FIT",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "2ee01e0a21961b3da70cee105e317b0b7973f49a"
+        }
+      ]
+    },
+    "websiteQr": {
+      "nodeId": "35:32",
+      "imageFills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FIT",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "3f851a2ad227fd01172e4574605609ab071ea514"
+        }
+      ],
+      "imageBounds": {
+        "x": 930,
+        "y": 210,
+        "width": 150,
+        "height": 150
+      },
+      "outerBounds": {
+        "x": 906,
+        "y": 186,
+        "width": 198,
+        "height": 198
+      },
+      "padding": [
+        24,
+        24,
+        24,
+        24
+      ]
+    },
+    "staffWebsiteQrFills": [
+      {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FIT",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "3f851a2ad227fd01172e4574605609ab071ea514"
+      }
+    ],
+    "cardSize": {
+      "width": 1080,
+      "height": 1350
+    },
+    "qrSize": {
+      "width": 320,
+      "height": 320
+    },
+    "headerHeight": 288,
+    "bodyHeight": 1062,
+    "bodyGap": 40,
+    "profileHeight": 396,
+    "masterTextCount": 16,
+    "localTextStyleCount": 17,
+    "localVariableCount": 16,
+    "outOfBounds": {
+      "master": [],
+      "staff": []
+    },
+    "temporaryValidation": {
+      "createdNodeIds": [
+        "36:31",
+        "I36:31;5:29",
+        "I36:31;35:28",
+        "I36:31;5:30",
+        "I36:31;35:29",
+        "I36:31;35:30",
+        "I36:31;35:31",
+        "I36:31;35:32",
+        "I36:31;35:33",
+        "I36:31;5:31",
+        "I36:31;5:32",
+        "I36:31;5:33",
+        "I36:31;5:34",
+        "I36:31;5:35",
+        "I36:31;5:36",
+        "I36:31;5:37",
+        "I36:31;19:29",
+        "I36:31;19:30",
+        "I36:31;16:27",
+        "I36:31;5:39",
+        "I36:31;16:26",
+        "I36:31;5:38",
+        "I36:31;5:40",
+        "I36:31;5:41",
+        "I36:31;5:42",
+        "I36:31;5:43",
+        "I36:31;5:44",
+        "I36:31;5:45",
+        "I36:31;5:46",
+        "I36:31;24:30",
+        "I36:31;5:48",
+        "I36:31;5:47"
+      ],
+      "removedNodeIds": [
+        "36:31",
+        "I36:31;5:29",
+        "I36:31;35:28",
+        "I36:31;5:30",
+        "I36:31;35:29",
+        "I36:31;35:30",
+        "I36:31;35:31",
+        "I36:31;35:32",
+        "I36:31;35:33",
+        "I36:31;5:31",
+        "I36:31;5:32",
+        "I36:31;5:33",
+        "I36:31;5:34",
+        "I36:31;5:35",
+        "I36:31;5:36",
+        "I36:31;5:37",
+        "I36:31;19:29",
+        "I36:31;19:30",
+        "I36:31;16:27",
+        "I36:31;5:39",
+        "I36:31;16:26",
+        "I36:31;5:38",
+        "I36:31;5:40",
+        "I36:31;5:41",
+        "I36:31;5:42",
+        "I36:31;5:43",
+        "I36:31;5:44",
+        "I36:31;5:45",
+        "I36:31;5:46",
+        "I36:31;24:30",
+        "I36:31;5:48",
+        "I36:31;5:47"
+      ],
+      "temporaryInstanceRemoved": true,
+      "websiteQr": {
+        "nodeId": "35:32",
+        "imageFills": [
+          {
+            "type": "IMAGE",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "scaleMode": "FIT",
+            "scalingFactor": 0.5,
+            "rotation": 0,
+            "filters": {
+              "exposure": 0,
+              "contrast": 0,
+              "saturation": 0,
+              "temperature": 0,
+              "tint": 0,
+              "highlights": 0,
+              "shadows": 0
+            },
+            "imageTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ],
+            "imageHash": "3f851a2ad227fd01172e4574605609ab071ea514"
+          }
+        ],
+        "imageBounds": {
+          "x": 930,
+          "y": 210,
+          "width": 150,
+          "height": 150
+        },
+        "outerBounds": {
+          "x": 906,
+          "y": 186,
+          "width": 198,
+          "height": 198
+        },
+        "padding": [
+          24,
+          24,
+          24,
+          24
+        ]
+      },
+      "headerBounds": {
+        "x": 120,
+        "y": 160,
+        "width": 1080,
+        "height": 288
+      },
+      "logo": {
+        "bounds": {
+          "x": 216,
+          "y": 197.65882873535156,
+          "width": 520,
+          "height": 148.68234252929688
+        },
+        "fills": [
+          {
+            "type": "IMAGE",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "scaleMode": "FIT",
+            "scalingFactor": 0.5,
+            "rotation": 0,
+            "filters": {
+              "exposure": 0,
+              "contrast": 0,
+              "saturation": 0,
+              "temperature": 0,
+              "tint": 0,
+              "highlights": 0,
+              "shadows": 0
+            },
+            "imageTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ],
+            "imageHash": "2ee01e0a21961b3da70cee105e317b0b7973f49a"
+          }
+        ]
+      },
+      "staffWebsiteQrFills": [
+        {
+          "type": "IMAGE",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "scaleMode": "FIT",
+          "scalingFactor": 0.5,
+          "rotation": 0,
+          "filters": {
+            "exposure": 0,
+            "contrast": 0,
+            "saturation": 0,
+            "temperature": 0,
+            "tint": 0,
+            "highlights": 0,
+            "shadows": 0
+          },
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "imageHash": "3f851a2ad227fd01172e4574605609ab071ea514"
+        }
+      ],
+      "staffProperties": {
+        "직급 KR#19:1": {
+          "type": "TEXT",
+          "value": "과장"
+        },
+        "소속 KR#19:0": {
+          "type": "TEXT",
+          "value": "AI융합본부"
+        },
+        "소속 CN#16:0": {
+          "type": "TEXT",
+          "value": "人工智能融合事业部"
+        },
+        "QR 안내 표시#5:5": {
+          "type": "BOOLEAN",
+          "value": false
+        },
+        "직급 EN#5:3": {
+          "type": "TEXT",
+          "value": "Manager"
+        },
+        "직급 CN#5:2": {
+          "type": "TEXT",
+          "value": "经理"
+        },
+        "한글 이름 표시#5:4": {
+          "type": "BOOLEAN",
+          "value": true
+        },
+        "소속 EN#16:1": {
+          "type": "TEXT",
+          "value": "AI Convergence Division"
+        },
+        "이름 KR#5:1": {
+          "type": "TEXT",
+          "value": "조상연"
+        },
+        "이름 EN#5:0": {
+          "type": "TEXT",
+          "value": "Jo Sangyeon"
+        }
+      },
+      "staffPropertiesPreserved": true,
+      "staffPersonalQrPreserved": true,
+      "staffRoleXs": [
+        347,
+        347,
+        347
+      ],
+      "longDepartment": {
+        "roleXs": [
+          684,
+          684,
+          684
+        ],
+        "gridHeight": 184,
+        "outOfBounds": []
+      },
+      "outOfBounds": {
+        "master": [],
+        "staff": []
+      },
+      "styleCount": 17,
+      "variableCount": 16,
+      "textCount": 16
+    },
+    "websiteQrDecode": {
+      "previewPath": "90_작업 공간/중국출장/명함/제작 기록/검토/템플릿 미리보기 홈페이지 QR.png",
+      "previewSha256": "4266f8c6d1b3306934f93fa98da55bc8759bfa07a3cdacc87a9b7ea6702937f2",
+      "decodedWebsite": "http://www.cellbig.com",
+      "cropBounds": [
+        786,
+        26,
+        984,
+        224
+      ],
+      "decoder": "OpenCV QRCodeDetector",
+      "wechatDeviceTest": false,
+      "originalPreviewPath": "90_작업 공간/중국 출장 디지털 명함/검토/템플릿 미리보기 홈페이지 QR.png"
+    },
+    "websiteQrColor": "제공 PNG 원본 유지. 흰색 변환은 사용자 담당이며 이번 작업에서 수행하지 않음",
+    "visual_review": "1080 x 1350 최신 미리보기에서 상단 로고와 홈페이지 주소 및 홈페이지 QR, 개인 정보와 위챗 QR, 하단 안내의 잘림과 겹침 없음",
+    "actual_wechat_qr_scan": "미실행. 홈페이지 QR은 내보낸 이미지의 로컬 OpenCV 해독으로 URL 일치 확인. 위챗 실기기 인식과 중국 내 홈페이지 접속은 미검증",
+    "source_files_unchanged": true
+  },
+  "preview": {
+    "path": "90_작업 공간/중국출장/명함/제작 기록/검토/템플릿 미리보기 홈페이지 QR.png",
+    "sha256": "4266f8c6d1b3306934f93fa98da55bc8759bfa07a3cdacc87a9b7ea6702937f2"
+  },
+  "remainingPersonalization": [
+    "다른 직원 명함 복제 시 이름과 세 언어 소속 및 직급, 위챗 QR 교체와 검수",
+    "홈페이지 QR의 흰색 변환은 사용자 담당",
+    "위챗 실기기 QR 인식과 홈페이지 접속 확인"
+  ],
+  "history": [
+    {
+      "at": "2026-11-16T12:21:20+09:00",
+      "reason": "사용자의 4:5와 QR 320 디자인 시안 반영 지시",
+      "previousValidation": {
+        "createdNodeIds": [],
+        "mutatedNodeIds": [
+          "5:29",
+          "5:71",
+          "5:72"
+        ],
+        "componentId": "5:28",
+        "instanceId": "5:50",
+        "reviewFrameId": "5:49",
+        "propertyDefinitions": {
+          "이름 EN#5:0": {
+            "type": "TEXT",
+            "defaultValue": "NAME SURNAME"
+          },
+          "이름 KR#5:1": {
+            "type": "TEXT",
+            "defaultValue": "이름"
+          },
+          "직함 KR#5:2": {
+            "type": "TEXT",
+            "defaultValue": "직함"
+          },
+          "직함 EN#5:3": {
+            "type": "TEXT",
+            "defaultValue": "Job Title"
+          },
+          "한글 이름 표시#5:4": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          },
+          "QR 안내 표시#5:5": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          }
+        },
+        "instanceProperties": {
+          "QR 안내 표시#5:5": {
+            "type": "BOOLEAN",
+            "value": true
+          },
+          "직함 EN#5:3": {
+            "type": "TEXT",
+            "value": "Job Title"
+          },
+          "직함 KR#5:2": {
+            "type": "TEXT",
+            "value": "직함"
+          },
+          "한글 이름 표시#5:4": {
+            "type": "BOOLEAN",
+            "value": true
+          },
+          "이름 KR#5:1": {
+            "type": "TEXT",
+            "value": "이름"
+          },
+          "이름 EN#5:0": {
+            "type": "TEXT",
+            "value": "NAME SURNAME"
+          }
+        },
+        "logo": {
+          "id": "5:30",
+          "imageHash": "2ee01e0a21961b3da70cee105e317b0b7973f49a",
+          "scaleMode": "FIT",
+          "width": 640,
+          "height": 182.99365234375
+        },
+        "textNodes": [
+          {
+            "id": "5:33",
+            "name": "회사명 / 공통",
+            "text": "CELLBIG",
+            "width": 888,
+            "height": 36,
+            "textStyleId": "S:6f0e474571c29684441e732f1c1fe23130c099ab,",
+            "fillVariableBound": true
+          },
+          {
+            "id": "5:35",
+            "name": "이름 EN / 변경",
+            "text": "NAME SURNAME",
+            "width": 888,
+            "height": 86,
+            "textStyleId": "S:f676e7d9682d21be890a27fdda9b013b3b2c25f6,",
+            "fillVariableBound": true
+          },
+          {
+            "id": "5:36",
+            "name": "이름 KR / 변경",
+            "text": "이름",
+            "width": 888,
+            "height": 48,
+            "textStyleId": "S:2c969bed0d429ad2f5d1ac53f9fcd1d9f1f2e8bf,",
+            "fillVariableBound": true
+          },
+          {
+            "id": "5:38",
+            "name": "직함 KR / 변경",
+            "text": "직함",
+            "width": 888,
+            "height": 44,
+            "textStyleId": "S:004362deb6a49679c4b33c1a87d4a0e1940cab4a,",
+            "fillVariableBound": true
+          },
+          {
+            "id": "5:39",
+            "name": "직함 EN / 변경",
+            "text": "Job Title",
+            "width": 888,
+            "height": 40,
+            "textStyleId": "S:96a450824be377a63069fd93b782b10ccc2a03a1,",
+            "fillVariableBound": true
+          },
+          {
+            "id": "5:44",
+            "name": "QR 영역 제목",
+            "text": "WeChat QR",
+            "width": 400,
+            "height": 56,
+            "textStyleId": "S:5efdfb986f6551bbe2d7fbfe876dac0fbf135e42,",
+            "fillVariableBound": true
+          },
+          {
+            "id": "5:45",
+            "name": "QR 교체 안내",
+            "text": "직원별 QR 이미지",
+            "width": 400,
+            "height": 38,
+            "textStyleId": "S:78b77cf816ada2eb686fcc76e74a76da098434b2,",
+            "fillVariableBound": true
+          },
+          {
+            "id": "5:47",
+            "name": "친구 추가 안내 CN",
+            "text": "扫码添加微信",
+            "width": 888,
+            "height": 48,
+            "textStyleId": "S:ee87362cf100071d12add05e83ae963c4385db64,",
+            "fillVariableBound": true
+          },
+          {
+            "id": "5:48",
+            "name": "친구 추가 안내 EN",
+            "text": "Scan to connect on WeChat",
+            "width": 888,
+            "height": 30,
+            "textStyleId": "S:48531e23da99afc9d0632991cd11b2cb51635e46,",
+            "fillVariableBound": true
+          }
+        ],
+        "outOfBounds": [],
+        "instanceMainComponentId": "5:28",
+        "reviewBounds": {
+          "width": 1080,
+          "height": 1440
+        },
+        "exportSettings": [
+          {
+            "format": "PNG",
+            "suffix": "",
+            "contentsOnly": true,
+            "colorProfile": "DOCUMENT",
+            "constraint": {
+              "type": "SCALE",
+              "value": 1
+            }
+          }
+        ],
+        "visual_review": "1080 x 1440 미리보기 직접 확인. 글자와 로고의 잘림, 겹침 없음",
+        "source_files_unchanged": true,
+        "actual_wechat_qr_scan": "미실행: 개인별 QR 미제공"
+      },
+      "previousPreview": {
+        "path": "90_작업 공간/중국 출장 디지털 명함/검토/템플릿 미리보기.png",
+        "sha256": "89f2aab0aeaf9c61de2c328bebb7bed0b27976a940e2defa3c3bb03f518f89e4"
+      },
+      "previousDimensions": {
+        "width": 1080,
+        "height": 1440,
+        "qrWidth": 480,
+        "qrHeight": 480,
+        "instanceProperties": {
+          "QR 안내 표시#5:5": {
+            "type": "BOOLEAN",
+            "value": true
+          },
+          "직함 EN#5:3": {
+            "type": "TEXT",
+            "value": "Job Title"
+          },
+          "직함 KR#5:2": {
+            "type": "TEXT",
+            "value": "직함"
+          },
+          "한글 이름 표시#5:4": {
+            "type": "BOOLEAN",
+            "value": true
+          },
+          "이름 KR#5:1": {
+            "type": "TEXT",
+            "value": "이름"
+          },
+          "이름 EN#5:0": {
+            "type": "TEXT",
+            "value": "NAME SURNAME"
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-11-16T13:39:42+09:00",
+      "reason": "중문과 영문 소속 및 직급을 독립 속성으로 분리하는 사용자 지시",
+      "previousValidation": {
+        "createdNodeIds": [],
+        "mutatedNodeIds": [
+          "5:28",
+          "5:29",
+          "5:30",
+          "5:31",
+          "5:32",
+          "5:33",
+          "5:34",
+          "5:35",
+          "5:36",
+          "5:37",
+          "5:38",
+          "5:39",
+          "5:40",
+          "5:41",
+          "5:42",
+          "5:43",
+          "5:44",
+          "5:45",
+          "5:46",
+          "5:47",
+          "5:48",
+          "5:49",
+          "5:50",
+          "I5:50;5:29",
+          "I5:50;5:30",
+          "I5:50;5:31",
+          "I5:50;5:32",
+          "I5:50;5:33",
+          "I5:50;5:34",
+          "I5:50;5:35",
+          "I5:50;5:36",
+          "I5:50;5:37",
+          "I5:50;5:38",
+          "I5:50;5:39",
+          "I5:50;5:40",
+          "I5:50;5:41",
+          "I5:50;5:42",
+          "I5:50;5:43",
+          "I5:50;5:44",
+          "I5:50;5:45",
+          "I5:50;5:46",
+          "I5:50;5:47",
+          "I5:50;5:48",
+          "5:72",
+          "5:73"
+        ],
+        "previous": {
+          "width": 1080,
+          "height": 1440,
+          "qrWidth": 480,
+          "qrHeight": 480,
+          "instanceProperties": {
+            "QR 안내 표시#5:5": {
+              "type": "BOOLEAN",
+              "value": true
+            },
+            "직함 EN#5:3": {
+              "type": "TEXT",
+              "value": "Job Title"
+            },
+            "직함 KR#5:2": {
+              "type": "TEXT",
+              "value": "직함"
+            },
+            "한글 이름 표시#5:4": {
+              "type": "BOOLEAN",
+              "value": true
+            },
+            "이름 KR#5:1": {
+              "type": "TEXT",
+              "value": "이름"
+            },
+            "이름 EN#5:0": {
+              "type": "TEXT",
+              "value": "NAME SURNAME"
+            }
+          }
+        },
+        "componentId": "5:28",
+        "reviewFrameId": "5:49",
+        "instanceId": "5:50",
+        "componentBounds": {
+          "width": 1080,
+          "height": 1350
+        },
+        "instanceBounds": {
+          "width": 1080,
+          "height": 1350
+        },
+        "reviewBounds": {
+          "width": 1080,
+          "height": 1350
+        },
+        "qrBounds": {
+          "width": 320,
+          "height": 320
+        },
+        "qrSizing": "320 x 320 includes the quiet zone; actual four-module margin pending supplied QR",
+        "body": {
+          "width": 1080,
+          "height": 1062,
+          "gap": 64,
+          "alignment": "CENTER"
+        },
+        "textNodes": [
+          {
+            "id": "5:33",
+            "name": "회사명 / 공통",
+            "text": "CELLBIG",
+            "width": 888,
+            "height": 36,
+            "textStyleId": "S:6f0e474571c29684441e732f1c1fe23130c099ab,"
+          },
+          {
+            "id": "5:35",
+            "name": "이름 EN / 변경",
+            "text": "NAME SURNAME",
+            "width": 888,
+            "height": 86,
+            "textStyleId": "S:f676e7d9682d21be890a27fdda9b013b3b2c25f6,"
+          },
+          {
+            "id": "5:36",
+            "name": "이름 KR / 변경",
+            "text": "이름",
+            "width": 888,
+            "height": 48,
+            "textStyleId": "S:2c969bed0d429ad2f5d1ac53f9fcd1d9f1f2e8bf,"
+          },
+          {
+            "id": "5:38",
+            "name": "직함 KR / 변경",
+            "text": "직함",
+            "width": 888,
+            "height": 44,
+            "textStyleId": "S:004362deb6a49679c4b33c1a87d4a0e1940cab4a,"
+          },
+          {
+            "id": "5:39",
+            "name": "직함 EN / 변경",
+            "text": "Job Title",
+            "width": 888,
+            "height": 40,
+            "textStyleId": "S:96a450824be377a63069fd93b782b10ccc2a03a1,"
+          },
+          {
+            "id": "5:44",
+            "name": "QR 영역 제목",
+            "text": "WeChat QR",
+            "width": 272,
+            "height": 56,
+            "textStyleId": "S:5efdfb986f6551bbe2d7fbfe876dac0fbf135e42,"
+          },
+          {
+            "id": "5:45",
+            "name": "QR 교체 안내",
+            "text": "직원별 QR 이미지",
+            "width": 272,
+            "height": 38,
+            "textStyleId": "S:78b77cf816ada2eb686fcc76e74a76da098434b2,"
+          },
+          {
+            "id": "5:47",
+            "name": "친구 추가 안내 CN",
+            "text": "扫码添加微信",
+            "width": 888,
+            "height": 48,
+            "textStyleId": "S:ee87362cf100071d12add05e83ae963c4385db64,"
+          },
+          {
+            "id": "5:48",
+            "name": "친구 추가 안내 EN",
+            "text": "Scan to connect on WeChat",
+            "width": 888,
+            "height": 30,
+            "textStyleId": "S:48531e23da99afc9d0632991cd11b2cb51635e46,"
+          }
+        ],
+        "propertyDefinitions": {
+          "이름 EN#5:0": {
+            "type": "TEXT",
+            "defaultValue": "NAME SURNAME"
+          },
+          "이름 KR#5:1": {
+            "type": "TEXT",
+            "defaultValue": "이름"
+          },
+          "직함 KR#5:2": {
+            "type": "TEXT",
+            "defaultValue": "직함"
+          },
+          "직함 EN#5:3": {
+            "type": "TEXT",
+            "defaultValue": "Job Title"
+          },
+          "한글 이름 표시#5:4": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          },
+          "QR 안내 표시#5:5": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          }
+        },
+        "instanceProperties": {
+          "QR 안내 표시#5:5": {
+            "type": "BOOLEAN",
+            "value": true
+          },
+          "직함 EN#5:3": {
+            "type": "TEXT",
+            "value": "Job Title"
+          },
+          "직함 KR#5:2": {
+            "type": "TEXT",
+            "value": "직함"
+          },
+          "한글 이름 표시#5:4": {
+            "type": "BOOLEAN",
+            "value": true
+          },
+          "이름 KR#5:1": {
+            "type": "TEXT",
+            "value": "이름"
+          },
+          "이름 EN#5:0": {
+            "type": "TEXT",
+            "value": "NAME SURNAME"
+          }
+        },
+        "outOfBounds": [],
+        "exportSettings": [
+          {
+            "format": "PNG",
+            "suffix": "",
+            "contentsOnly": true,
+            "colorProfile": "DOCUMENT",
+            "constraint": {
+              "type": "SCALE",
+              "value": 1
+            }
+          }
+        ],
+        "visual_review": "1080 x 1350 새 미리보기 직접 확인. 기본 텍스트, QR 교체 안내와 로고의 잘림 및 겹침 없음",
+        "actual_wechat_qr_scan": "미실행: 개인별 QR 미제공",
+        "actual_four_module_quiet_zone": "미확인: 실제 QR의 모듈 크기 확인 후 사방 최소 4모듈 확보 필요. 320은 여백 포함 전체 배치 영역"
+      },
+      "previousPreview": {
+        "path": "90_작업 공간/중국 출장 디지털 명함/검토/템플릿 미리보기 4대5.png",
+        "sha256": "eba4b9577ef17d44229fbf4b36838175837eaad00a24d695479f944f1919d38f"
+      }
+    },
+    {
+      "at": "2026-11-16T13:47:57+09:00",
+      "reason": "사용자 요청에 따라 한글 소속 및 직급을 추가하고 KR EN CN 순서로 재배치",
+      "previousValidation": {
+        "scope": "소속과 직급 속성 분리",
+        "propertyDefinitions": {
+          "이름 EN#5:0": {
+            "type": "TEXT",
+            "defaultValue": "NAME SURNAME"
+          },
+          "이름 KR#5:1": {
+            "type": "TEXT",
+            "defaultValue": "이름"
+          },
+          "직급 CN#5:2": {
+            "type": "TEXT",
+            "defaultValue": "职位"
+          },
+          "직급 EN#5:3": {
+            "type": "TEXT",
+            "defaultValue": "Job Title"
+          },
+          "한글 이름 표시#5:4": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          },
+          "QR 안내 표시#5:5": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          },
+          "소속 CN#16:0": {
+            "type": "TEXT",
+            "defaultValue": "所属部门"
+          },
+          "소속 EN#16:1": {
+            "type": "TEXT",
+            "defaultValue": "Department"
+          }
+        },
+        "instanceProperties": {
+          "소속 CN#16:0": {
+            "type": "TEXT",
+            "value": "所属部门"
+          },
+          "QR 안내 표시#5:5": {
+            "type": "BOOLEAN",
+            "value": true
+          },
+          "직급 EN#5:3": {
+            "type": "TEXT",
+            "value": "Job Title"
+          },
+          "직급 CN#5:2": {
+            "type": "TEXT",
+            "value": "职位"
+          },
+          "한글 이름 표시#5:4": {
+            "type": "BOOLEAN",
+            "value": true
+          },
+          "소속 EN#16:1": {
+            "type": "TEXT",
+            "value": "Department"
+          },
+          "이름 KR#5:1": {
+            "type": "TEXT",
+            "value": "조상연"
+          },
+          "이름 EN#5:0": {
+            "type": "TEXT",
+            "value": "Jo Sangyeon"
+          }
+        },
+        "rows": [
+          {
+            "id": "16:24",
+            "name": "소속과 직급 CN",
+            "width": 888,
+            "height": 44,
+            "children": [
+              {
+                "id": "16:26",
+                "name": "소속 CN / 변경",
+                "x": 0,
+                "y": 0,
+                "width": 128,
+                "height": 44,
+                "textAutoResize": "WIDTH_AND_HEIGHT",
+                "maxWidth": 660
+              },
+              {
+                "id": "5:38",
+                "name": "직급 CN / 변경",
+                "x": 152,
+                "y": 0,
+                "width": 64,
+                "height": 44,
+                "textAutoResize": "WIDTH_AND_HEIGHT",
+                "maxWidth": 204
+              }
+            ]
+          },
+          {
+            "id": "16:25",
+            "name": "소속과 직급 EN",
+            "width": 888,
+            "height": 40,
+            "children": [
+              {
+                "id": "16:27",
+                "name": "소속 EN / 변경",
+                "x": 0,
+                "y": 0,
+                "width": 159,
+                "height": 40,
+                "textAutoResize": "WIDTH_AND_HEIGHT",
+                "maxWidth": 660
+              },
+              {
+                "id": "5:39",
+                "name": "직급 EN / 변경",
+                "x": 183,
+                "y": 0,
+                "width": 117,
+                "height": 40,
+                "textAutoResize": "WIDTH_AND_HEIGHT",
+                "maxWidth": 204
+              }
+            ]
+          }
+        ],
+        "outOfBounds": [],
+        "layoutTest": {
+          "representative": [
+            {
+              "name": "소속과 직급 CN",
+              "width": 888,
+              "height": 44,
+              "children": [
+                {
+                  "name": "소속 CN / 변경",
+                  "text": "人工智能融合事业部",
+                  "x": 0,
+                  "y": 0,
+                  "width": 288,
+                  "height": 44,
+                  "textAutoResize": "WIDTH_AND_HEIGHT"
+                },
+                {
+                  "name": "직급 CN / 변경",
+                  "text": "经理",
+                  "x": 312,
+                  "y": 0,
+                  "width": 64,
+                  "height": 44,
+                  "textAutoResize": "WIDTH_AND_HEIGHT"
+                }
+              ]
+            },
+            {
+              "name": "소속과 직급 EN",
+              "width": 888,
+              "height": 40,
+              "children": [
+                {
+                  "name": "소속 EN / 변경",
+                  "text": "AI Convergence Division",
+                  "x": 0,
+                  "y": 0,
+                  "width": 323,
+                  "height": 40,
+                  "textAutoResize": "WIDTH_AND_HEIGHT"
+                },
+                {
+                  "name": "직급 EN / 변경",
+                  "text": "Manager",
+                  "x": 347,
+                  "y": 0,
+                  "width": 120,
+                  "height": 40,
+                  "textAutoResize": "WIDTH_AND_HEIGHT"
+                }
+              ]
+            }
+          ],
+          "longDepartment": [
+            {
+              "name": "소속과 직급 CN",
+              "width": 888,
+              "height": 44,
+              "children": [
+                {
+                  "name": "소속 CN / 변경",
+                  "text": "人工智能融合事业部",
+                  "x": 0,
+                  "y": 0,
+                  "width": 288,
+                  "height": 44,
+                  "textAutoResize": "WIDTH_AND_HEIGHT"
+                },
+                {
+                  "name": "직급 CN / 변경",
+                  "text": "经理",
+                  "x": 312,
+                  "y": 0,
+                  "width": 64,
+                  "height": 44,
+                  "textAutoResize": "WIDTH_AND_HEIGHT"
+                }
+              ]
+            },
+            {
+              "name": "소속과 직급 EN",
+              "width": 888,
+              "height": 80,
+              "children": [
+                {
+                  "name": "소속 EN / 변경",
+                  "text": "AI Convergence Research and Technology Development Division",
+                  "x": 0,
+                  "y": 0,
+                  "width": 660,
+                  "height": 80,
+                  "textAutoResize": "WIDTH_AND_HEIGHT"
+                },
+                {
+                  "name": "직급 EN / 변경",
+                  "text": "Manager",
+                  "x": 684,
+                  "y": 0,
+                  "width": 120,
+                  "height": 40,
+                  "textAutoResize": "WIDTH_AND_HEIGHT"
+                }
+              ]
+            }
+          ],
+          "outOfBounds": [],
+          "staffPropertiesUnchanged": true,
+          "createdNodeIds": [
+            "17:26",
+            "I17:26;5:29",
+            "I17:26;5:30",
+            "I17:26;5:31",
+            "I17:26;5:32",
+            "I17:26;5:33",
+            "I17:26;5:34",
+            "I17:26;5:35",
+            "I17:26;5:36",
+            "I17:26;5:37",
+            "I17:26;16:24",
+            "I17:26;16:26",
+            "I17:26;5:38",
+            "I17:26;16:25",
+            "I17:26;16:27",
+            "I17:26;5:39",
+            "I17:26;5:40",
+            "I17:26;5:41",
+            "I17:26;5:42",
+            "I17:26;5:43",
+            "I17:26;5:44",
+            "I17:26;5:45",
+            "I17:26;5:46",
+            "I17:26;5:47",
+            "I17:26;5:48"
+          ],
+          "removedNodeIds": [
+            "17:26",
+            "I17:26;5:29",
+            "I17:26;5:30",
+            "I17:26;5:31",
+            "I17:26;5:32",
+            "I17:26;5:33",
+            "I17:26;5:34",
+            "I17:26;5:35",
+            "I17:26;5:36",
+            "I17:26;5:37",
+            "I17:26;16:24",
+            "I17:26;16:26",
+            "I17:26;5:38",
+            "I17:26;16:25",
+            "I17:26;16:27",
+            "I17:26;5:39",
+            "I17:26;5:40",
+            "I17:26;5:41",
+            "I17:26;5:42",
+            "I17:26;5:43",
+            "I17:26;5:44",
+            "I17:26;5:45",
+            "I17:26;5:46",
+            "I17:26;5:47",
+            "I17:26;5:48"
+          ],
+          "mutatedNodeIds": [],
+          "temporaryInstanceRemoved": true
+        },
+        "visual_review": "1080 x 1350 직원별 명함 미리보기 직접 확인. 이름, 중문 및 영문 소속과 직급 및 QR 안내의 잘림과 겹침 없음",
+        "actual_wechat_qr_scan": "미실행: 실제 개인 QR 미제공",
+        "source_files_unchanged": true,
+        "staff_names_preserved": true
+      },
+      "previousPreview": {
+        "path": "90_작업 공간/중국 출장 디지털 명함/검토/템플릿 미리보기 소속 직급 분리.png",
+        "sha256": "d8729e3a2906717ab2a56250d234e97c30265898fa874661727d489583549aa6"
+      }
+    },
+    {
+      "at": "2026-11-16T13:57:15+09:00",
+      "reason": "QR 하단 안내를 한글 영문 중문으로 확장하고 레이아웃 재조정",
+      "previousValidation": {
+        "scope": "소속과 직급을 한글, 영문, 중문 순서로 확장",
+        "propertyDefinitions": {
+          "이름 EN#5:0": {
+            "type": "TEXT",
+            "defaultValue": "NAME SURNAME"
+          },
+          "이름 KR#5:1": {
+            "type": "TEXT",
+            "defaultValue": "이름"
+          },
+          "직급 CN#5:2": {
+            "type": "TEXT",
+            "defaultValue": "职位"
+          },
+          "직급 EN#5:3": {
+            "type": "TEXT",
+            "defaultValue": "Job Title"
+          },
+          "한글 이름 표시#5:4": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          },
+          "QR 안내 표시#5:5": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          },
+          "소속 CN#16:0": {
+            "type": "TEXT",
+            "defaultValue": "所属部门"
+          },
+          "소속 EN#16:1": {
+            "type": "TEXT",
+            "defaultValue": "Department"
+          },
+          "소속 KR#19:0": {
+            "type": "TEXT",
+            "defaultValue": "소속 부서"
+          },
+          "직급 KR#19:1": {
+            "type": "TEXT",
+            "defaultValue": "직급"
+          }
+        },
+        "instanceProperties": {
+          "직급 KR#19:1": {
+            "type": "TEXT",
+            "value": "과장"
+          },
+          "소속 KR#19:0": {
+            "type": "TEXT",
+            "value": "AI융합본부"
+          },
+          "소속 CN#16:0": {
+            "type": "TEXT",
+            "value": "人工智能融合事业部"
+          },
+          "QR 안내 표시#5:5": {
+            "type": "BOOLEAN",
+            "value": true
+          },
+          "직급 EN#5:3": {
+            "type": "TEXT",
+            "value": "Manager"
+          },
+          "직급 CN#5:2": {
+            "type": "TEXT",
+            "value": "经理"
+          },
+          "한글 이름 표시#5:4": {
+            "type": "BOOLEAN",
+            "value": true
+          },
+          "소속 EN#16:1": {
+            "type": "TEXT",
+            "value": "AI Convergence Division"
+          },
+          "이름 KR#5:1": {
+            "type": "TEXT",
+            "value": "조상연"
+          },
+          "이름 EN#5:0": {
+            "type": "TEXT",
+            "value": "Jo Sangyeon"
+          }
+        },
+        "rowOrder": [
+          {
+            "id": "19:28",
+            "name": "소속과 직급 KR",
+            "height": 44
+          },
+          {
+            "id": "16:25",
+            "name": "소속과 직급 EN",
+            "height": 40
+          },
+          {
+            "id": "16:24",
+            "name": "소속과 직급 CN",
+            "height": 44
+          }
+        ],
+        "instanceRows": [
+          {
+            "id": "I5:50;19:28",
+            "name": "소속과 직급 KR",
+            "width": 888,
+            "height": 44,
+            "texts": [
+              {
+                "id": "I5:50;19:29",
+                "text": "AI융합본부",
+                "width": 147,
+                "height": 44
+              },
+              {
+                "id": "I5:50;19:30",
+                "text": "과장",
+                "width": 59,
+                "height": 44
+              }
+            ]
+          },
+          {
+            "id": "I5:50;16:25",
+            "name": "소속과 직급 EN",
+            "width": 888,
+            "height": 40,
+            "texts": [
+              {
+                "id": "I5:50;16:27",
+                "text": "AI Convergence Division",
+                "width": 323,
+                "height": 40
+              },
+              {
+                "id": "I5:50;5:39",
+                "text": "Manager",
+                "width": 120,
+                "height": 40
+              }
+            ]
+          },
+          {
+            "id": "I5:50;16:24",
+            "name": "소속과 직급 CN",
+            "width": 888,
+            "height": 44,
+            "texts": [
+              {
+                "id": "I5:50;16:26",
+                "text": "人工智能融合事业部",
+                "width": 288,
+                "height": 44
+              },
+              {
+                "id": "I5:50;5:38",
+                "text": "经理",
+                "width": 64,
+                "height": 44
+              }
+            ]
+          }
+        ],
+        "cardSize": {
+          "width": 1080,
+          "height": 1350
+        },
+        "qrSize": {
+          "width": 320,
+          "height": 320
+        },
+        "outOfBounds": [],
+        "layoutTest": {
+          "rows": [
+            {
+              "name": "소속과 직급 KR",
+              "height": 44,
+              "children": [
+                {
+                  "name": "소속 KR / 변경",
+                  "text": "AI융합본부",
+                  "width": 147,
+                  "height": 44
+                },
+                {
+                  "name": "직급 KR / 변경",
+                  "text": "과장",
+                  "width": 59,
+                  "height": 44
+                }
+              ]
+            },
+            {
+              "name": "소속과 직급 EN",
+              "height": 80,
+              "children": [
+                {
+                  "name": "소속 EN / 변경",
+                  "text": "AI Convergence Research and Technology Development Division",
+                  "width": 660,
+                  "height": 80
+                },
+                {
+                  "name": "직급 EN / 변경",
+                  "text": "Manager",
+                  "width": 120,
+                  "height": 40
+                }
+              ]
+            },
+            {
+              "name": "소속과 직급 CN",
+              "height": 44,
+              "children": [
+                {
+                  "name": "소속 CN / 변경",
+                  "text": "人工智能融合事业部",
+                  "width": 288,
+                  "height": 44
+                },
+                {
+                  "name": "직급 CN / 변경",
+                  "text": "经理",
+                  "width": 64,
+                  "height": 44
+                }
+              ]
+            }
+          ],
+          "outOfBounds": [],
+          "staffPropertiesPreserved": true,
+          "createdNodeIds": [
+            "20:29",
+            "I20:29;5:29",
+            "I20:29;5:30",
+            "I20:29;5:31",
+            "I20:29;5:32",
+            "I20:29;5:33",
+            "I20:29;5:34",
+            "I20:29;5:35",
+            "I20:29;5:36",
+            "I20:29;5:37",
+            "I20:29;19:28",
+            "I20:29;19:29",
+            "I20:29;19:30",
+            "I20:29;16:25",
+            "I20:29;16:27",
+            "I20:29;5:39",
+            "I20:29;16:24",
+            "I20:29;16:26",
+            "I20:29;5:38",
+            "I20:29;5:40",
+            "I20:29;5:41",
+            "I20:29;5:42",
+            "I20:29;5:43",
+            "I20:29;5:44",
+            "I20:29;5:45",
+            "I20:29;5:46",
+            "I20:29;5:47",
+            "I20:29;5:48"
+          ],
+          "removedNodeIds": [
+            "20:29",
+            "I20:29;5:29",
+            "I20:29;5:30",
+            "I20:29;5:31",
+            "I20:29;5:32",
+            "I20:29;5:33",
+            "I20:29;5:34",
+            "I20:29;5:35",
+            "I20:29;5:36",
+            "I20:29;5:37",
+            "I20:29;19:28",
+            "I20:29;19:29",
+            "I20:29;19:30",
+            "I20:29;16:25",
+            "I20:29;16:27",
+            "I20:29;5:39",
+            "I20:29;16:24",
+            "I20:29;16:26",
+            "I20:29;5:38",
+            "I20:29;5:40",
+            "I20:29;5:41",
+            "I20:29;5:42",
+            "I20:29;5:43",
+            "I20:29;5:44",
+            "I20:29;5:45",
+            "I20:29;5:46",
+            "I20:29;5:47",
+            "I20:29;5:48"
+          ],
+          "temporaryInstanceRemoved": true
+        },
+        "readback": {
+          "master": [
+            {
+              "id": "5:33",
+              "name": "회사명 / 공통",
+              "text": "CELLBIG",
+              "visible": true,
+              "x": 216,
+              "y": 534,
+              "width": 888,
+              "height": 36
+            },
+            {
+              "id": "5:35",
+              "name": "이름 EN / 변경",
+              "text": "NAME SURNAME",
+              "visible": true,
+              "x": 216,
+              "y": 594,
+              "width": 888,
+              "height": 86
+            },
+            {
+              "id": "5:36",
+              "name": "이름 KR / 변경",
+              "text": "이름",
+              "visible": true,
+              "x": 216,
+              "y": 688,
+              "width": 888,
+              "height": 48
+            },
+            {
+              "id": "19:29",
+              "name": "소속 KR / 변경",
+              "text": "소속 부서",
+              "visible": true,
+              "x": 216,
+              "y": 760,
+              "width": 125,
+              "height": 44
+            },
+            {
+              "id": "19:30",
+              "name": "직급 KR / 변경",
+              "text": "직급",
+              "visible": true,
+              "x": 365,
+              "y": 760,
+              "width": 59,
+              "height": 44
+            },
+            {
+              "id": "16:27",
+              "name": "소속 EN / 변경",
+              "text": "Department",
+              "visible": true,
+              "x": 216,
+              "y": 812,
+              "width": 159,
+              "height": 40
+            },
+            {
+              "id": "5:39",
+              "name": "직급 EN / 변경",
+              "text": "Job Title",
+              "visible": true,
+              "x": 399,
+              "y": 812,
+              "width": 117,
+              "height": 40
+            },
+            {
+              "id": "16:26",
+              "name": "소속 CN / 변경",
+              "text": "所属部门",
+              "visible": true,
+              "x": 216,
+              "y": 860,
+              "width": 128,
+              "height": 44
+            },
+            {
+              "id": "5:38",
+              "name": "직급 CN / 변경",
+              "text": "职位",
+              "visible": true,
+              "x": 368,
+              "y": 860,
+              "width": 64,
+              "height": 44
+            },
+            {
+              "id": "5:44",
+              "name": "QR 영역 제목",
+              "text": "WeChat QR",
+              "visible": true,
+              "x": 524,
+              "y": 1103,
+              "width": 272,
+              "height": 56
+            },
+            {
+              "id": "5:45",
+              "name": "QR 교체 안내",
+              "text": "직원별 QR 이미지",
+              "visible": true,
+              "x": 524,
+              "y": 1167,
+              "width": 272,
+              "height": 38
+            },
+            {
+              "id": "5:47",
+              "name": "친구 추가 안내 CN",
+              "text": "扫码添加微信",
+              "visible": true,
+              "x": 216,
+              "y": 1338,
+              "width": 888,
+              "height": 48
+            },
+            {
+              "id": "5:48",
+              "name": "친구 추가 안내 EN",
+              "text": "Scan to connect on WeChat",
+              "visible": true,
+              "x": 216,
+              "y": 1394,
+              "width": 888,
+              "height": 30
+            }
+          ],
+          "staff": [
+            {
+              "id": "I5:50;5:33",
+              "name": "회사명 / 공통",
+              "text": "CELLBIG",
+              "visible": true,
+              "x": 1456,
+              "y": 534,
+              "width": 888,
+              "height": 36
+            },
+            {
+              "id": "I5:50;5:35",
+              "name": "이름 EN / 변경",
+              "text": "Jo Sangyeon",
+              "visible": true,
+              "x": 1456,
+              "y": 594,
+              "width": 888,
+              "height": 86
+            },
+            {
+              "id": "I5:50;5:36",
+              "name": "이름 KR / 변경",
+              "text": "조상연",
+              "visible": true,
+              "x": 1456,
+              "y": 688,
+              "width": 888,
+              "height": 48
+            },
+            {
+              "id": "I5:50;19:29",
+              "name": "소속 KR / 변경",
+              "text": "AI융합본부",
+              "visible": true,
+              "x": 1456,
+              "y": 760,
+              "width": 147,
+              "height": 44
+            },
+            {
+              "id": "I5:50;19:30",
+              "name": "직급 KR / 변경",
+              "text": "과장",
+              "visible": true,
+              "x": 1627,
+              "y": 760,
+              "width": 59,
+              "height": 44
+            },
+            {
+              "id": "I5:50;16:27",
+              "name": "소속 EN / 변경",
+              "text": "AI Convergence Division",
+              "visible": true,
+              "x": 1456,
+              "y": 812,
+              "width": 323,
+              "height": 40
+            },
+            {
+              "id": "I5:50;5:39",
+              "name": "직급 EN / 변경",
+              "text": "Manager",
+              "visible": true,
+              "x": 1803,
+              "y": 812,
+              "width": 120,
+              "height": 40
+            },
+            {
+              "id": "I5:50;16:26",
+              "name": "소속 CN / 변경",
+              "text": "人工智能融合事业部",
+              "visible": true,
+              "x": 1456,
+              "y": 860,
+              "width": 288,
+              "height": 44
+            },
+            {
+              "id": "I5:50;5:38",
+              "name": "직급 CN / 변경",
+              "text": "经理",
+              "visible": true,
+              "x": 1768,
+              "y": 860,
+              "width": 64,
+              "height": 44
+            },
+            {
+              "id": "I5:50;5:44",
+              "name": "QR 영역 제목",
+              "text": "WeChat QR",
+              "visible": true,
+              "x": 1764,
+              "y": 1103,
+              "width": 272,
+              "height": 56
+            },
+            {
+              "id": "I5:50;5:45",
+              "name": "QR 교체 안내",
+              "text": "직원별 QR 이미지",
+              "visible": true,
+              "x": 1764,
+              "y": 1167,
+              "width": 272,
+              "height": 38
+            },
+            {
+              "id": "I5:50;5:47",
+              "name": "친구 추가 안내 CN",
+              "text": "扫码添加微信",
+              "visible": true,
+              "x": 1456,
+              "y": 1338,
+              "width": 888,
+              "height": 48
+            },
+            {
+              "id": "I5:50;5:48",
+              "name": "친구 추가 안내 EN",
+              "text": "Scan to connect on WeChat",
+              "visible": true,
+              "x": 1456,
+              "y": 1394,
+              "width": 888,
+              "height": 30
+            }
+          ],
+          "properties": {
+            "직급 KR#19:1": {
+              "type": "TEXT",
+              "value": "과장"
+            },
+            "소속 KR#19:0": {
+              "type": "TEXT",
+              "value": "AI융합본부"
+            },
+            "소속 CN#16:0": {
+              "type": "TEXT",
+              "value": "人工智能融合事业部"
+            },
+            "QR 안내 표시#5:5": {
+              "type": "BOOLEAN",
+              "value": true
+            },
+            "직급 EN#5:3": {
+              "type": "TEXT",
+              "value": "Manager"
+            },
+            "직급 CN#5:2": {
+              "type": "TEXT",
+              "value": "经理"
+            },
+            "한글 이름 표시#5:4": {
+              "type": "BOOLEAN",
+              "value": true
+            },
+            "소속 EN#16:1": {
+              "type": "TEXT",
+              "value": "AI Convergence Division"
+            },
+            "이름 KR#5:1": {
+              "type": "TEXT",
+              "value": "조상연"
+            },
+            "이름 EN#5:0": {
+              "type": "TEXT",
+              "value": "Jo Sangyeon"
+            }
+          },
+          "mainComponentId": "5:28",
+          "masterRowOrder": [
+            "19:28",
+            "16:25",
+            "16:24"
+          ]
+        },
+        "visual_review": "1080 x 1350 최신 내보내기 프레임 미리보기 직접 확인. 로고, 이름, 한글 및 영문 및 중문 소속과 직급, QR 영역과 안내의 잘림 및 겹침 없음",
+        "screenshot_consistency": "첫 이미지에 이전 배치가 표시되어 레이어와 대조. 이후 최신 내보내기 프레임 이미지에서 세 언어와 로고 표시 확인",
+        "actual_wechat_qr_scan": "미실행: 실제 개인 QR 미제공",
+        "source_files_unchanged": true,
+        "source_file_checks": [
+          {
+            "path": "90_작업 공간/중국출장/명함/셀빅 명함 가이드_210430.pdf",
+            "sha256": "38943212153c618095856d3179c459007f4496fe33576d18637e99dcd00b2cba"
+          },
+          {
+            "path": "90_작업 공간/중국출장/명함/Cellbig_logo_white.png",
+            "sha256": "07fc51f0f8357411c5abdbaf6d5f9656fa6777230a60f12fc008c35484edec29"
+          }
+        ],
+        "existing_staff_properties_preserved": true,
+        "korean_values_source": "사용자가 밝힌 AI융합본부 과장을 새 KR 속성에 입력. 기존 영문과 중문 및 이름 값 보존",
+        "translation_status": "현재 인스턴스의 영문 및 중문은 기존 입력값이며 회사 공식 번역 승인 여부를 별도 확인하지 않음"
+      },
+      "previousPreview": {
+        "path": "90_작업 공간/중국 출장 디지털 명함/검토/템플릿 미리보기 한글 영문 중문.png",
+        "sha256": "0e29a06e386328d9ddfa1bfaced361c1f1fe562b736ca268f2bc57cf61b7bb04"
+      }
+    },
+    {
+      "at": "2026-11-16T14:25:31+09:00",
+      "reason": "소속과 직급을 내용에 반응하는 공유 열과 행 구조로 변경",
+      "previousValidation": {
+        "scope": "QR 하단 안내를 한글 영문 중문으로 확장하고 전체 레이아웃 조정",
+        "propertyDefinitions": {
+          "이름 EN#5:0": {
+            "type": "TEXT",
+            "defaultValue": "NAME SURNAME"
+          },
+          "이름 KR#5:1": {
+            "type": "TEXT",
+            "defaultValue": "이름"
+          },
+          "직급 CN#5:2": {
+            "type": "TEXT",
+            "defaultValue": "职位"
+          },
+          "직급 EN#5:3": {
+            "type": "TEXT",
+            "defaultValue": "Job Title"
+          },
+          "한글 이름 표시#5:4": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          },
+          "QR 안내 표시#5:5": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          },
+          "소속 CN#16:0": {
+            "type": "TEXT",
+            "defaultValue": "所属部门"
+          },
+          "소속 EN#16:1": {
+            "type": "TEXT",
+            "defaultValue": "Department"
+          },
+          "소속 KR#19:0": {
+            "type": "TEXT",
+            "defaultValue": "소속 부서"
+          },
+          "직급 KR#19:1": {
+            "type": "TEXT",
+            "defaultValue": "직급"
+          }
+        },
+        "instanceProperties": {
+          "직급 KR#19:1": {
+            "type": "TEXT",
+            "value": "과장"
+          },
+          "소속 KR#19:0": {
+            "type": "TEXT",
+            "value": "AI융합본부"
+          },
+          "소속 CN#16:0": {
+            "type": "TEXT",
+            "value": "人工智能融合事业部"
+          },
+          "QR 안내 표시#5:5": {
+            "type": "BOOLEAN",
+            "value": true
+          },
+          "직급 EN#5:3": {
+            "type": "TEXT",
+            "value": "Manager"
+          },
+          "직급 CN#5:2": {
+            "type": "TEXT",
+            "value": "经理"
+          },
+          "한글 이름 표시#5:4": {
+            "type": "BOOLEAN",
+            "value": true
+          },
+          "소속 EN#16:1": {
+            "type": "TEXT",
+            "value": "AI Convergence Division"
+          },
+          "이름 KR#5:1": {
+            "type": "TEXT",
+            "value": "조상연"
+          },
+          "이름 EN#5:0": {
+            "type": "TEXT",
+            "value": "Jo Sangyeon"
+          }
+        },
+        "staffPropertiesPreserved": true,
+        "mainComponentId": "5:28",
+        "cardSize": {
+          "width": 1080,
+          "height": 1350
+        },
+        "qrSize": {
+          "width": 320,
+          "height": 320
+        },
+        "headerHeight": 248,
+        "bodyHeight": 1102,
+        "bodyGap": 40,
+        "profileHeight": 396,
+        "captionRows": [
+          {
+            "id": "24:30",
+            "name": "친구 추가 안내 KR",
+            "text": "스캔하여 위챗 친구 추가",
+            "width": 888,
+            "height": 42,
+            "fontSize": 30,
+            "line": {
+              "unit": "PIXELS",
+              "value": 42
+            },
+            "styleId": "S:1834d6a5fe4487e1173566b5d869fa8c5478814e,"
+          },
+          {
+            "id": "5:48",
+            "name": "친구 추가 안내 EN",
+            "text": "Scan to connect on WeChat",
+            "width": 888,
+            "height": 38,
+            "fontSize": 28,
+            "line": {
+              "unit": "PIXELS",
+              "value": 38
+            },
+            "styleId": "S:48531e23da99afc9d0632991cd11b2cb51635e46,"
+          },
+          {
+            "id": "5:47",
+            "name": "친구 추가 안내 CN",
+            "text": "扫码添加微信",
+            "width": 888,
+            "height": 42,
+            "fontSize": 30,
+            "line": {
+              "unit": "PIXELS",
+              "value": 42
+            },
+            "styleId": "S:ee87362cf100071d12add05e83ae963c4385db64,"
+          }
+        ],
+        "masterTextCount": 14,
+        "localTextStyleCount": 15,
+        "outOfBounds": {
+          "master": [],
+          "staff": []
+        },
+        "layoutTest": {
+          "outOfBounds": [],
+          "captionRows": [
+            {
+              "name": "친구 추가 안내 KR",
+              "text": "스캔하여 위챗 친구 추가",
+              "visible": true,
+              "bounds": {
+                "x": 2696,
+                "y": 1300,
+                "width": 888,
+                "height": 42
+              }
+            },
+            {
+              "name": "친구 추가 안내 EN",
+              "text": "Scan to connect on WeChat",
+              "visible": true,
+              "bounds": {
+                "x": 2696,
+                "y": 1350,
+                "width": 888,
+                "height": 38
+              }
+            },
+            {
+              "name": "친구 추가 안내 CN",
+              "text": "扫码添加微信",
+              "visible": true,
+              "bounds": {
+                "x": 2696,
+                "y": 1396,
+                "width": 888,
+                "height": 42
+              }
+            }
+          ],
+          "qrPlaceholderProperty": false,
+          "qrPlaceholderAbsentFromVisibleTraversal": true,
+          "longDepartment": {
+            "text": "AI Convergence Research and Technology Development Division",
+            "width": 660,
+            "height": 80
+          },
+          "staffPropertiesPreserved": true,
+          "createdNodeIds": [
+            "25:88",
+            "I25:88;5:29",
+            "I25:88;5:30",
+            "I25:88;5:31",
+            "I25:88;5:32",
+            "I25:88;5:33",
+            "I25:88;5:34",
+            "I25:88;5:35",
+            "I25:88;5:36",
+            "I25:88;5:37",
+            "I25:88;19:28",
+            "I25:88;19:29",
+            "I25:88;19:30",
+            "I25:88;16:25",
+            "I25:88;16:27",
+            "I25:88;5:39",
+            "I25:88;16:24",
+            "I25:88;16:26",
+            "I25:88;5:38",
+            "I25:88;5:40",
+            "I25:88;5:41",
+            "I25:88;5:42",
+            "I25:88;5:43",
+            "I25:88;5:44",
+            "I25:88;5:45",
+            "I25:88;5:46",
+            "I25:88;24:30",
+            "I25:88;5:48",
+            "I25:88;5:47"
+          ],
+          "removedNodeIds": [
+            "25:88",
+            "I25:88;5:29",
+            "I25:88;5:30",
+            "I25:88;5:31",
+            "I25:88;5:32",
+            "I25:88;5:33",
+            "I25:88;5:34",
+            "I25:88;5:35",
+            "I25:88;5:36",
+            "I25:88;5:37",
+            "I25:88;19:28",
+            "I25:88;19:29",
+            "I25:88;19:30",
+            "I25:88;16:25",
+            "I25:88;16:27",
+            "I25:88;5:39",
+            "I25:88;16:24",
+            "I25:88;16:26",
+            "I25:88;5:38",
+            "I25:88;5:40",
+            "I25:88;5:41",
+            "I25:88;5:42",
+            "I25:88;5:43",
+            "I25:88;5:44",
+            "I25:88;5:45",
+            "I25:88;5:46",
+            "I25:88;24:30",
+            "I25:88;5:48",
+            "I25:88;5:47"
+          ],
+          "temporaryInstanceRemoved": true
+        },
+        "visual_review": "1080 x 1350 최신 미리보기에서 로고, 이름과 세 언어 소속 및 직급, QR 영역 및 한글 영문 중문 하단 안내의 잘림과 겹침 없음. QR 하단 세 언어의 크기와 색상을 비슷하게 맞춘 배치 확인",
+        "testRecovery": "QR 표시 속성 변경 후 숨겨진 인스턴스 자식이 탐색에서 제외되어 직접 참조 검증이 중단됨. 각 임시 인스턴스 제거 확인 후 표시 속성 및 실제 보이는 레이어 탐색으로 재검증하여 통과",
+        "actual_wechat_qr_scan": "미실행: 실제 개인 QR 미제공",
+        "source_files_unchanged": true
+      },
+      "previousPreview": {
+        "path": "90_작업 공간/중국 출장 디지털 명함/검토/템플릿 미리보기 QR 다국어 안내.png",
+        "sha256": "e8c466b8ed7f1a44e53602bd4f4b64470cb171270b3d7ad78184d964cb4243fa"
+      },
+      "previousRowIds": {
+        "cn": "16:24",
+        "en": "16:25",
+        "kr": "19:28"
+      }
+    },
+    {
+      "at": "2026-11-16T14:37:44+09:00",
+      "reason": "홈페이지 주소와 검정 QR 원본을 상단 브랜드 영역에 추가. 흰색 변환은 사용자가 수행",
+      "previousValidation": {
+        "scope": "소속과 직급을 공통 2열 3행 그리드로 변경하여 소속명 수정 시 자동 정렬",
+        "propertyDefinitions": {
+          "이름 EN#5:0": {
+            "type": "TEXT",
+            "defaultValue": "NAME SURNAME"
+          },
+          "이름 KR#5:1": {
+            "type": "TEXT",
+            "defaultValue": "이름"
+          },
+          "직급 CN#5:2": {
+            "type": "TEXT",
+            "defaultValue": "职位"
+          },
+          "직급 EN#5:3": {
+            "type": "TEXT",
+            "defaultValue": "Job Title"
+          },
+          "한글 이름 표시#5:4": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          },
+          "QR 안내 표시#5:5": {
+            "type": "BOOLEAN",
+            "defaultValue": true
+          },
+          "소속 CN#16:0": {
+            "type": "TEXT",
+            "defaultValue": "所属部门"
+          },
+          "소속 EN#16:1": {
+            "type": "TEXT",
+            "defaultValue": "Department"
+          },
+          "소속 KR#19:0": {
+            "type": "TEXT",
+            "defaultValue": "소속 부서"
+          },
+          "직급 KR#19:1": {
+            "type": "TEXT",
+            "defaultValue": "직급"
+          }
+        },
+        "instanceProperties": {
+          "직급 KR#19:1": {
+            "type": "TEXT",
+            "value": "과장"
+          },
+          "소속 KR#19:0": {
+            "type": "TEXT",
+            "value": "AI융합본부"
+          },
+          "소속 CN#16:0": {
+            "type": "TEXT",
+            "value": "人工智能融合事业部"
+          },
+          "QR 안내 표시#5:5": {
+            "type": "BOOLEAN",
+            "value": false
+          },
+          "직급 EN#5:3": {
+            "type": "TEXT",
+            "value": "Manager"
+          },
+          "직급 CN#5:2": {
+            "type": "TEXT",
+            "value": "经理"
+          },
+          "한글 이름 표시#5:4": {
+            "type": "BOOLEAN",
+            "value": true
+          },
+          "소속 EN#16:1": {
+            "type": "TEXT",
+            "value": "AI Convergence Division"
+          },
+          "이름 KR#5:1": {
+            "type": "TEXT",
+            "value": "조상연"
+          },
+          "이름 EN#5:0": {
+            "type": "TEXT",
+            "value": "Jo Sangyeon"
+          }
+        },
+        "staffPropertiesPreserved": true,
+        "staffQrFillsPreserved": true,
+        "staffQrFills": [
+          {
+            "type": "IMAGE",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "scaleMode": "FILL",
+            "scalingFactor": 0.5,
+            "rotation": 0,
+            "filters": {
+              "exposure": 0,
+              "contrast": 0,
+              "saturation": 0,
+              "temperature": 0,
+              "tint": 0,
+              "highlights": 0,
+              "shadows": 0
+            },
+            "imageTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ],
+            "imageHash": "e527e59ce2a7fa1ec0682ec518998784a1168c95"
+          }
+        ],
+        "mainComponentId": "5:28",
+        "masterGrid": {
+          "id": "5:37",
+          "width": 888,
+          "height": 144,
+          "layoutMode": "GRID",
+          "columnSizes": [
+            {
+              "type": "HUG",
+              "value": 1
+            },
+            {
+              "type": "HUG",
+              "value": 1
+            }
+          ],
+          "rowSizes": [
+            {
+              "type": "HUG",
+              "value": 1
+            },
+            {
+              "type": "HUG",
+              "value": 1
+            },
+            {
+              "type": "HUG",
+              "value": 1
+            }
+          ],
+          "columnGap": 24,
+          "rowGap": 8,
+          "children": [
+            {
+              "id": "19:29",
+              "name": "소속 KR / 변경",
+              "text": "소속 부서",
+              "x": 0,
+              "y": 0,
+              "width": 125,
+              "height": 44,
+              "row": 0,
+              "column": 0,
+              "propertyReferences": {
+                "characters": "소속 KR#19:0"
+              }
+            },
+            {
+              "id": "19:30",
+              "name": "직급 KR / 변경",
+              "text": "직급",
+              "x": 183,
+              "y": 0,
+              "width": 59,
+              "height": 44,
+              "row": 0,
+              "column": 1,
+              "propertyReferences": {
+                "characters": "직급 KR#19:1"
+              }
+            },
+            {
+              "id": "16:27",
+              "name": "소속 EN / 변경",
+              "text": "Department",
+              "x": 0,
+              "y": 52,
+              "width": 159,
+              "height": 40,
+              "row": 1,
+              "column": 0,
+              "propertyReferences": {
+                "characters": "소속 EN#16:1"
+              }
+            },
+            {
+              "id": "5:39",
+              "name": "직급 EN / 변경",
+              "text": "Job Title",
+              "x": 183,
+              "y": 52,
+              "width": 117,
+              "height": 40,
+              "row": 1,
+              "column": 1,
+              "propertyReferences": {
+                "characters": "직급 EN#5:3"
+              }
+            },
+            {
+              "id": "16:26",
+              "name": "소속 CN / 변경",
+              "text": "所属部门",
+              "x": 0,
+              "y": 100,
+              "width": 128,
+              "height": 44,
+              "row": 2,
+              "column": 0,
+              "propertyReferences": {
+                "characters": "소속 CN#16:0"
+              }
+            },
+            {
+              "id": "5:38",
+              "name": "직급 CN / 변경",
+              "text": "职位",
+              "x": 183,
+              "y": 100,
+              "width": 64,
+              "height": 44,
+              "row": 2,
+              "column": 1,
+              "propertyReferences": {
+                "characters": "직급 CN#5:2"
+              }
+            }
+          ],
+          "roleXs": [
+            183,
+            183,
+            183
+          ]
+        },
+        "staffGrid": {
+          "id": "I5:50;5:37",
+          "width": 888,
+          "height": 144,
+          "layoutMode": "GRID",
+          "columnSizes": [
+            {
+              "type": "HUG",
+              "value": 1
+            },
+            {
+              "type": "HUG",
+              "value": 1
+            }
+          ],
+          "rowSizes": [
+            {
+              "type": "HUG",
+              "value": 1
+            },
+            {
+              "type": "HUG",
+              "value": 1
+            },
+            {
+              "type": "HUG",
+              "value": 1
+            }
+          ],
+          "columnGap": 24,
+          "rowGap": 8,
+          "children": [
+            {
+              "id": "I5:50;19:29",
+              "name": "소속 KR / 변경",
+              "text": "AI융합본부",
+              "x": 0,
+              "y": 0,
+              "width": 147,
+              "height": 44,
+              "row": 0,
+              "column": 0,
+              "propertyReferences": {
+                "characters": "소속 KR#19:0"
+              }
+            },
+            {
+              "id": "I5:50;19:30",
+              "name": "직급 KR / 변경",
+              "text": "과장",
+              "x": 347,
+              "y": 0,
+              "width": 59,
+              "height": 44,
+              "row": 0,
+              "column": 1,
+              "propertyReferences": {
+                "characters": "직급 KR#19:1"
+              }
+            },
+            {
+              "id": "I5:50;16:27",
+              "name": "소속 EN / 변경",
+              "text": "AI Convergence Division",
+              "x": 0,
+              "y": 52,
+              "width": 323,
+              "height": 40,
+              "row": 1,
+              "column": 0,
+              "propertyReferences": {
+                "characters": "소속 EN#16:1"
+              }
+            },
+            {
+              "id": "I5:50;5:39",
+              "name": "직급 EN / 변경",
+              "text": "Manager",
+              "x": 347,
+              "y": 52,
+              "width": 120,
+              "height": 40,
+              "row": 1,
+              "column": 1,
+              "propertyReferences": {
+                "characters": "직급 EN#5:3"
+              }
+            },
+            {
+              "id": "I5:50;16:26",
+              "name": "소속 CN / 변경",
+              "text": "人工智能融合事业部",
+              "x": 0,
+              "y": 100,
+              "width": 288,
+              "height": 44,
+              "row": 2,
+              "column": 0,
+              "propertyReferences": {
+                "characters": "소속 CN#16:0"
+              }
+            },
+            {
+              "id": "I5:50;5:38",
+              "name": "직급 CN / 변경",
+              "text": "经理",
+              "x": 347,
+              "y": 100,
+              "width": 64,
+              "height": 44,
+              "row": 2,
+              "column": 1,
+              "propertyReferences": {
+                "characters": "직급 CN#5:2"
+              }
+            }
+          ],
+          "roleXs": [
+            347,
+            347,
+            347
+          ]
+        },
+        "gridBoundVariables": {
+          "gridRowGap": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:5:13"
+          },
+          "gridColumnGap": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:5:14"
+          }
+        },
+        "cardSize": {
+          "width": 1080,
+          "height": 1350
+        },
+        "qrSize": {
+          "width": 320,
+          "height": 320
+        },
+        "headerHeight": 248,
+        "bodyHeight": 1102,
+        "bodyGap": 40,
+        "profileHeight": 396,
+        "captionRows": [
+          {
+            "id": "24:30",
+            "name": "친구 추가 안내 KR",
+            "text": "스캔하여 위챗 친구 추가",
+            "width": 888,
+            "height": 42,
+            "fontSize": 30,
+            "line": {
+              "unit": "PIXELS",
+              "value": 42
+            },
+            "styleId": "S:1834d6a5fe4487e1173566b5d869fa8c5478814e,"
+          },
+          {
+            "id": "5:48",
+            "name": "친구 추가 안내 EN",
+            "text": "Scan to connect on WeChat",
+            "width": 888,
+            "height": 38,
+            "fontSize": 28,
+            "line": {
+              "unit": "PIXELS",
+              "value": 38
+            },
+            "styleId": "S:48531e23da99afc9d0632991cd11b2cb51635e46,"
+          },
+          {
+            "id": "5:47",
+            "name": "친구 추가 안내 CN",
+            "text": "扫码添加微信",
+            "width": 888,
+            "height": 42,
+            "fontSize": 30,
+            "line": {
+              "unit": "PIXELS",
+              "value": 42
+            },
+            "styleId": "S:ee87362cf100071d12add05e83ae963c4385db64,"
+          }
+        ],
+        "masterTextCount": 14,
+        "localTextStyleCount": 15,
+        "outOfBounds": {
+          "master": [],
+          "staff": []
+        },
+        "layoutTest": {
+          "cases": [
+            {
+              "label": "short",
+              "gridHeight": 144,
+              "cells": [
+                {
+                  "name": "소속 KR / 변경",
+                  "text": "짧음",
+                  "x": 0,
+                  "y": 0,
+                  "width": 59,
+                  "height": 44,
+                  "row": 0,
+                  "column": 0
+                },
+                {
+                  "name": "직급 KR / 변경",
+                  "text": "과장",
+                  "x": 88,
+                  "y": 0,
+                  "width": 59,
+                  "height": 44,
+                  "row": 0,
+                  "column": 1
+                },
+                {
+                  "name": "소속 EN / 변경",
+                  "text": "AI",
+                  "x": 0,
+                  "y": 52,
+                  "width": 28,
+                  "height": 40,
+                  "row": 1,
+                  "column": 0
+                },
+                {
+                  "name": "직급 EN / 변경",
+                  "text": "Manager",
+                  "x": 88,
+                  "y": 52,
+                  "width": 120,
+                  "height": 40,
+                  "row": 1,
+                  "column": 1
+                },
+                {
+                  "name": "소속 CN / 변경",
+                  "text": "部门",
+                  "x": 0,
+                  "y": 100,
+                  "width": 64,
+                  "height": 44,
+                  "row": 2,
+                  "column": 0
+                },
+                {
+                  "name": "직급 CN / 변경",
+                  "text": "经理",
+                  "x": 88,
+                  "y": 100,
+                  "width": 64,
+                  "height": 44,
+                  "row": 2,
+                  "column": 1
+                }
+              ],
+              "roleXs": [
+                88,
+                88,
+                88
+              ],
+              "rolesAligned": true,
+              "rowFirstLinesAligned": true,
+              "outOfBounds": []
+            },
+            {
+              "label": "current",
+              "gridHeight": 144,
+              "cells": [
+                {
+                  "name": "소속 KR / 변경",
+                  "text": "AI융합본부",
+                  "x": 0,
+                  "y": 0,
+                  "width": 147,
+                  "height": 44,
+                  "row": 0,
+                  "column": 0
+                },
+                {
+                  "name": "직급 KR / 변경",
+                  "text": "과장",
+                  "x": 347,
+                  "y": 0,
+                  "width": 59,
+                  "height": 44,
+                  "row": 0,
+                  "column": 1
+                },
+                {
+                  "name": "소속 EN / 변경",
+                  "text": "AI Convergence Division",
+                  "x": 0,
+                  "y": 52,
+                  "width": 323,
+                  "height": 40,
+                  "row": 1,
+                  "column": 0
+                },
+                {
+                  "name": "직급 EN / 변경",
+                  "text": "Manager",
+                  "x": 347,
+                  "y": 52,
+                  "width": 120,
+                  "height": 40,
+                  "row": 1,
+                  "column": 1
+                },
+                {
+                  "name": "소속 CN / 변경",
+                  "text": "人工智能融合事业部",
+                  "x": 0,
+                  "y": 100,
+                  "width": 288,
+                  "height": 44,
+                  "row": 2,
+                  "column": 0
+                },
+                {
+                  "name": "직급 CN / 변경",
+                  "text": "经理",
+                  "x": 347,
+                  "y": 100,
+                  "width": 64,
+                  "height": 44,
+                  "row": 2,
+                  "column": 1
+                }
+              ],
+              "roleXs": [
+                347,
+                347,
+                347
+              ],
+              "rolesAligned": true,
+              "rowFirstLinesAligned": true,
+              "outOfBounds": []
+            },
+            {
+              "label": "wrapped",
+              "gridHeight": 184,
+              "cells": [
+                {
+                  "name": "소속 KR / 변경",
+                  "text": "AI융합본부",
+                  "x": 0,
+                  "y": 0,
+                  "width": 147,
+                  "height": 44,
+                  "row": 0,
+                  "column": 0
+                },
+                {
+                  "name": "직급 KR / 변경",
+                  "text": "과장",
+                  "x": 684,
+                  "y": 0,
+                  "width": 59,
+                  "height": 44,
+                  "row": 0,
+                  "column": 1
+                },
+                {
+                  "name": "소속 EN / 변경",
+                  "text": "AI Convergence Research and Technology Development Division",
+                  "x": 0,
+                  "y": 52,
+                  "width": 660,
+                  "height": 80,
+                  "row": 1,
+                  "column": 0
+                },
+                {
+                  "name": "직급 EN / 변경",
+                  "text": "Manager",
+                  "x": 684,
+                  "y": 52,
+                  "width": 120,
+                  "height": 40,
+                  "row": 1,
+                  "column": 1
+                },
+                {
+                  "name": "소속 CN / 변경",
+                  "text": "人工智能融合事业部",
+                  "x": 0,
+                  "y": 140,
+                  "width": 288,
+                  "height": 44,
+                  "row": 2,
+                  "column": 0
+                },
+                {
+                  "name": "직급 CN / 변경",
+                  "text": "经理",
+                  "x": 684,
+                  "y": 140,
+                  "width": 64,
+                  "height": 44,
+                  "row": 2,
+                  "column": 1
+                }
+              ],
+              "roleXs": [
+                684,
+                684,
+                684
+              ],
+              "rolesAligned": true,
+              "rowFirstLinesAligned": true,
+              "outOfBounds": []
+            },
+            {
+              "label": "short-again",
+              "gridHeight": 144,
+              "cells": [
+                {
+                  "name": "소속 KR / 변경",
+                  "text": "짧음",
+                  "x": 0,
+                  "y": 0,
+                  "width": 59,
+                  "height": 44,
+                  "row": 0,
+                  "column": 0
+                },
+                {
+                  "name": "직급 KR / 변경",
+                  "text": "과장",
+                  "x": 88,
+                  "y": 0,
+                  "width": 59,
+                  "height": 44,
+                  "row": 0,
+                  "column": 1
+                },
+                {
+                  "name": "소속 EN / 변경",
+                  "text": "AI",
+                  "x": 0,
+                  "y": 52,
+                  "width": 28,
+                  "height": 40,
+                  "row": 1,
+                  "column": 0
+                },
+                {
+                  "name": "직급 EN / 변경",
+                  "text": "Manager",
+                  "x": 88,
+                  "y": 52,
+                  "width": 120,
+                  "height": 40,
+                  "row": 1,
+                  "column": 1
+                },
+                {
+                  "name": "소속 CN / 변경",
+                  "text": "部门",
+                  "x": 0,
+                  "y": 100,
+                  "width": 64,
+                  "height": 44,
+                  "row": 2,
+                  "column": 0
+                },
+                {
+                  "name": "직급 CN / 변경",
+                  "text": "经理",
+                  "x": 88,
+                  "y": 100,
+                  "width": 64,
+                  "height": 44,
+                  "row": 2,
+                  "column": 1
+                }
+              ],
+              "roleXs": [
+                88,
+                88,
+                88
+              ],
+              "rolesAligned": true,
+              "rowFirstLinesAligned": true,
+              "outOfBounds": []
+            }
+          ],
+          "allRolesAligned": true,
+          "allRowFirstLinesAligned": true,
+          "columnMovesAutomatically": true,
+          "columnShrinksAgain": true,
+          "wrappedRowHeightIncreases": true,
+          "staffPropertiesPreserved": true,
+          "staffQrPreserved": true,
+          "createdNodeIds": [
+            "31:25",
+            "I31:25;5:29",
+            "I31:25;5:30",
+            "I31:25;5:31",
+            "I31:25;5:32",
+            "I31:25;5:33",
+            "I31:25;5:34",
+            "I31:25;5:35",
+            "I31:25;5:36",
+            "I31:25;5:37",
+            "I31:25;19:29",
+            "I31:25;19:30",
+            "I31:25;16:27",
+            "I31:25;5:39",
+            "I31:25;16:26",
+            "I31:25;5:38",
+            "I31:25;5:40",
+            "I31:25;5:41",
+            "I31:25;5:42",
+            "I31:25;5:43",
+            "I31:25;5:44",
+            "I31:25;5:45",
+            "I31:25;5:46",
+            "I31:25;24:30",
+            "I31:25;5:48",
+            "I31:25;5:47"
+          ],
+          "removedNodeIds": [
+            "31:25",
+            "I31:25;5:29",
+            "I31:25;5:30",
+            "I31:25;5:31",
+            "I31:25;5:32",
+            "I31:25;5:33",
+            "I31:25;5:34",
+            "I31:25;5:35",
+            "I31:25;5:36",
+            "I31:25;5:37",
+            "I31:25;19:29",
+            "I31:25;19:30",
+            "I31:25;16:27",
+            "I31:25;5:39",
+            "I31:25;16:26",
+            "I31:25;5:38",
+            "I31:25;5:40",
+            "I31:25;5:41",
+            "I31:25;5:42",
+            "I31:25;5:43",
+            "I31:25;5:44",
+            "I31:25;5:45",
+            "I31:25;5:46",
+            "I31:25;24:30",
+            "I31:25;5:48",
+            "I31:25;5:47"
+          ],
+          "temporaryInstanceRemoved": true
+        },
+        "visual_review": "1080 x 1350 최신 내보내기 프레임 미리보기에서 한글 영문 중문 직급 시작점의 공통 세로 정렬 확인. 로고, 이름, 소속과 직급, 기존 QR 이미지 및 하단 안내의 잘림과 겹침 없음",
+        "actual_wechat_qr_scan": "미실행: 현재 인스턴스의 QR 이미지와 표시 설정은 보존하였으며 실제 기기의 친구 추가는 이번 검증 범위 아님",
+        "source_files_unchanged": true
+      },
+      "previousPreview": {
+        "path": "90_작업 공간/중국 출장 디지털 명함/검토/템플릿 미리보기 직급 자동 정렬.png",
+        "sha256": "7191c68685985851617b5d56a01e7acab8d8cd671dfb933376f743a496fc986b"
+      }
+    }
+  ],
+  "qrDesign": {
+    "overallWidth": 320,
+    "overallHeight": 320,
+    "includesQuietZone": true,
+    "minimumQuietZoneModules": 4,
+    "actualMarginVerified": false,
+    "source": "https://www.qrcode.com/en/howto/code.html"
+  },
+  "latestSplit": {
+    "createdNodeIds": [
+      "16:24",
+      "16:25",
+      "16:26",
+      "16:27"
+    ],
+    "mutatedNodeIds": [
+      "5:28",
+      "5:29",
+      "5:30",
+      "5:31",
+      "5:32",
+      "5:33",
+      "5:34",
+      "5:35",
+      "5:36",
+      "5:37",
+      "16:24",
+      "16:26",
+      "5:38",
+      "16:25",
+      "16:27",
+      "5:39",
+      "5:40",
+      "5:41",
+      "5:42",
+      "5:43",
+      "5:44",
+      "5:45",
+      "5:46",
+      "5:47",
+      "5:48",
+      "5:50",
+      "I5:50;5:29",
+      "I5:50;5:30",
+      "I5:50;5:31",
+      "I5:50;5:32",
+      "I5:50;5:33",
+      "I5:50;5:34",
+      "I5:50;5:35",
+      "I5:50;5:36",
+      "I5:50;5:37",
+      "I5:50;16:24",
+      "I5:50;16:26",
+      "I5:50;5:38",
+      "I5:50;16:25",
+      "I5:50;16:27",
+      "I5:50;5:39",
+      "I5:50;5:40",
+      "I5:50;5:41",
+      "I5:50;5:42",
+      "I5:50;5:43",
+      "I5:50;5:44",
+      "I5:50;5:45",
+      "I5:50;5:46",
+      "I5:50;5:47",
+      "I5:50;5:48",
+      "5:73"
+    ],
+    "createdStyleIds": [
+      "S:84e33c71cfd502355b1f617acc46e0265332147d,",
+      "S:e02a02971f0ea038a100fa77b4096133e06e529a,"
+    ],
+    "mutatedStyleIds": [
+      "S:004362deb6a49679c4b33c1a87d4a0e1940cab4a,",
+      "S:96a450824be377a63069fd93b782b10ccc2a03a1,"
+    ],
+    "propertyKeys": {
+      "cnDepartment": "소속 CN#16:0",
+      "cnRole": "직급 CN#5:2",
+      "enDepartment": "소속 EN#16:1",
+      "enRole": "직급 EN#5:3"
+    },
+    "rowIds": {
+      "cn": "16:24",
+      "en": "16:25"
+    },
+    "departmentIds": {
+      "cn": "16:26",
+      "en": "16:27"
+    },
+    "styleIds": {
+      "departmentCN": "S:84e33c71cfd502355b1f617acc46e0265332147d,",
+      "departmentEN": "S:e02a02971f0ea038a100fa77b4096133e06e529a,",
+      "roleCN": "S:004362deb6a49679c4b33c1a87d4a0e1940cab4a,",
+      "roleEN": "S:96a450824be377a63069fd93b782b10ccc2a03a1,"
+    },
+    "beforeProperties": {
+      "QR 안내 표시#5:5": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "직함 EN#5:3": {
+        "type": "TEXT",
+        "value": "Job Title"
+      },
+      "직함 KR#5:2": {
+        "type": "TEXT",
+        "value": "직함"
+      },
+      "한글 이름 표시#5:4": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "이름 KR#5:1": {
+        "type": "TEXT",
+        "value": "조상연"
+      },
+      "이름 EN#5:0": {
+        "type": "TEXT",
+        "value": "Jo Sangyeon"
+      }
+    },
+    "afterProperties": {
+      "소속 CN#16:0": {
+        "type": "TEXT",
+        "value": "所属部门"
+      },
+      "QR 안내 표시#5:5": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "직급 EN#5:3": {
+        "type": "TEXT",
+        "value": "Job Title"
+      },
+      "직급 CN#5:2": {
+        "type": "TEXT",
+        "value": "职位"
+      },
+      "한글 이름 표시#5:4": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "소속 EN#16:1": {
+        "type": "TEXT",
+        "value": "Department"
+      },
+      "이름 KR#5:1": {
+        "type": "TEXT",
+        "value": "조상연"
+      },
+      "이름 EN#5:0": {
+        "type": "TEXT",
+        "value": "Jo Sangyeon"
+      }
+    },
+    "definitions": {
+      "이름 EN#5:0": {
+        "type": "TEXT",
+        "defaultValue": "NAME SURNAME"
+      },
+      "이름 KR#5:1": {
+        "type": "TEXT",
+        "defaultValue": "이름"
+      },
+      "직급 CN#5:2": {
+        "type": "TEXT",
+        "defaultValue": "职位"
+      },
+      "직급 EN#5:3": {
+        "type": "TEXT",
+        "defaultValue": "Job Title"
+      },
+      "한글 이름 표시#5:4": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "QR 안내 표시#5:5": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "소속 CN#16:0": {
+        "type": "TEXT",
+        "defaultValue": "所属部门"
+      },
+      "소속 EN#16:1": {
+        "type": "TEXT",
+        "defaultValue": "Department"
+      }
+    },
+    "rows": [
+      {
+        "id": "16:24",
+        "name": "소속과 직급 CN",
+        "width": 888,
+        "height": 44,
+        "children": [
+          {
+            "id": "16:26",
+            "name": "소속 CN / 변경",
+            "x": 0,
+            "y": 0,
+            "width": 128,
+            "height": 44,
+            "textAutoResize": "WIDTH_AND_HEIGHT",
+            "maxWidth": 660
+          },
+          {
+            "id": "5:38",
+            "name": "직급 CN / 변경",
+            "x": 152,
+            "y": 0,
+            "width": 64,
+            "height": 44,
+            "textAutoResize": "WIDTH_AND_HEIGHT",
+            "maxWidth": 204
+          }
+        ]
+      },
+      {
+        "id": "16:25",
+        "name": "소속과 직급 EN",
+        "width": 888,
+        "height": 40,
+        "children": [
+          {
+            "id": "16:27",
+            "name": "소속 EN / 변경",
+            "x": 0,
+            "y": 0,
+            "width": 159,
+            "height": 40,
+            "textAutoResize": "WIDTH_AND_HEIGHT",
+            "maxWidth": 660
+          },
+          {
+            "id": "5:39",
+            "name": "직급 EN / 변경",
+            "x": 183,
+            "y": 0,
+            "width": 117,
+            "height": 40,
+            "textAutoResize": "WIDTH_AND_HEIGHT",
+            "maxWidth": 204
+          }
+        ]
+      }
+    ],
+    "outOfBounds": []
+  },
+  "latestThreeLanguage": {
+    "createdNodeIds": [
+      "19:28",
+      "19:29",
+      "19:30"
+    ],
+    "createdStyleIds": [
+      "S:d8ce856bd018d0d29f91452e5a7547cca91a2311,",
+      "S:dfe161ae1aca279ebf8bad6b54f0bb0de84b8663,"
+    ],
+    "mutatedNodeIds": [
+      "5:28",
+      "5:29",
+      "5:30",
+      "5:31",
+      "5:32",
+      "5:33",
+      "5:34",
+      "5:35",
+      "5:36",
+      "5:37",
+      "19:28",
+      "19:29",
+      "19:30",
+      "16:25",
+      "16:27",
+      "5:39",
+      "16:24",
+      "16:26",
+      "5:38",
+      "5:40",
+      "5:41",
+      "5:42",
+      "5:43",
+      "5:44",
+      "5:45",
+      "5:46",
+      "5:47",
+      "5:48",
+      "5:50",
+      "I5:50;5:29",
+      "I5:50;5:30",
+      "I5:50;5:31",
+      "I5:50;5:32",
+      "I5:50;5:33",
+      "I5:50;5:34",
+      "I5:50;5:35",
+      "I5:50;5:36",
+      "I5:50;5:37",
+      "I5:50;19:28",
+      "I5:50;19:29",
+      "I5:50;19:30",
+      "I5:50;16:25",
+      "I5:50;16:27",
+      "I5:50;5:39",
+      "I5:50;16:24",
+      "I5:50;16:26",
+      "I5:50;5:38",
+      "I5:50;5:40",
+      "I5:50;5:41",
+      "I5:50;5:42",
+      "I5:50;5:43",
+      "I5:50;5:44",
+      "I5:50;5:45",
+      "I5:50;5:46",
+      "I5:50;5:47",
+      "I5:50;5:48",
+      "5:73"
+    ],
+    "newPropertyKeys": {
+      "departmentKR": "소속 KR#19:0",
+      "rankKR": "직급 KR#19:1"
+    },
+    "newNodeIds": {
+      "row": "19:28",
+      "department": "19:29",
+      "rank": "19:30"
+    },
+    "newStyleIds": {
+      "departmentKR": "S:d8ce856bd018d0d29f91452e5a7547cca91a2311,",
+      "rankKR": "S:dfe161ae1aca279ebf8bad6b54f0bb0de84b8663,"
+    },
+    "previousProperties": {
+      "소속 CN#16:0": {
+        "type": "TEXT",
+        "value": "人工智能融合事业部"
+      },
+      "QR 안내 표시#5:5": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "직급 EN#5:3": {
+        "type": "TEXT",
+        "value": "Manager"
+      },
+      "직급 CN#5:2": {
+        "type": "TEXT",
+        "value": "经理"
+      },
+      "한글 이름 표시#5:4": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "소속 EN#16:1": {
+        "type": "TEXT",
+        "value": "AI Convergence Division"
+      },
+      "이름 KR#5:1": {
+        "type": "TEXT",
+        "value": "조상연"
+      },
+      "이름 EN#5:0": {
+        "type": "TEXT",
+        "value": "Jo Sangyeon"
+      }
+    },
+    "instanceProperties": {
+      "직급 KR#19:1": {
+        "type": "TEXT",
+        "value": "과장"
+      },
+      "소속 KR#19:0": {
+        "type": "TEXT",
+        "value": "AI융합본부"
+      },
+      "소속 CN#16:0": {
+        "type": "TEXT",
+        "value": "人工智能融合事业部"
+      },
+      "QR 안내 표시#5:5": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "직급 EN#5:3": {
+        "type": "TEXT",
+        "value": "Manager"
+      },
+      "직급 CN#5:2": {
+        "type": "TEXT",
+        "value": "经理"
+      },
+      "한글 이름 표시#5:4": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "소속 EN#16:1": {
+        "type": "TEXT",
+        "value": "AI Convergence Division"
+      },
+      "이름 KR#5:1": {
+        "type": "TEXT",
+        "value": "조상연"
+      },
+      "이름 EN#5:0": {
+        "type": "TEXT",
+        "value": "Jo Sangyeon"
+      }
+    },
+    "existingPropertiesPreserved": true,
+    "definitions": {
+      "이름 EN#5:0": {
+        "type": "TEXT",
+        "defaultValue": "NAME SURNAME"
+      },
+      "이름 KR#5:1": {
+        "type": "TEXT",
+        "defaultValue": "이름"
+      },
+      "직급 CN#5:2": {
+        "type": "TEXT",
+        "defaultValue": "职位"
+      },
+      "직급 EN#5:3": {
+        "type": "TEXT",
+        "defaultValue": "Job Title"
+      },
+      "한글 이름 표시#5:4": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "QR 안내 표시#5:5": {
+        "type": "BOOLEAN",
+        "defaultValue": true
+      },
+      "소속 CN#16:0": {
+        "type": "TEXT",
+        "defaultValue": "所属部门"
+      },
+      "소속 EN#16:1": {
+        "type": "TEXT",
+        "defaultValue": "Department"
+      },
+      "소속 KR#19:0": {
+        "type": "TEXT",
+        "defaultValue": "소속 부서"
+      },
+      "직급 KR#19:1": {
+        "type": "TEXT",
+        "defaultValue": "직급"
+      }
+    },
+    "rowOrder": [
+      {
+        "id": "19:28",
+        "name": "소속과 직급 KR",
+        "height": 44
+      },
+      {
+        "id": "16:25",
+        "name": "소속과 직급 EN",
+        "height": 40
+      },
+      {
+        "id": "16:24",
+        "name": "소속과 직급 CN",
+        "height": 44
+      }
+    ],
+    "instanceRows": [
+      {
+        "id": "I5:50;19:28",
+        "name": "소속과 직급 KR",
+        "width": 888,
+        "height": 44,
+        "texts": [
+          {
+            "id": "I5:50;19:29",
+            "text": "AI융합본부",
+            "width": 147,
+            "height": 44
+          },
+          {
+            "id": "I5:50;19:30",
+            "text": "과장",
+            "width": 59,
+            "height": 44
+          }
+        ]
+      },
+      {
+        "id": "I5:50;16:25",
+        "name": "소속과 직급 EN",
+        "width": 888,
+        "height": 40,
+        "texts": [
+          {
+            "id": "I5:50;16:27",
+            "text": "AI Convergence Division",
+            "width": 323,
+            "height": 40
+          },
+          {
+            "id": "I5:50;5:39",
+            "text": "Manager",
+            "width": 120,
+            "height": 40
+          }
+        ]
+      },
+      {
+        "id": "I5:50;16:24",
+        "name": "소속과 직급 CN",
+        "width": 888,
+        "height": 44,
+        "texts": [
+          {
+            "id": "I5:50;16:26",
+            "text": "人工智能融合事业部",
+            "width": 288,
+            "height": 44
+          },
+          {
+            "id": "I5:50;5:38",
+            "text": "经理",
+            "width": 64,
+            "height": 44
+          }
+        ]
+      }
+    ],
+    "cardSize": {
+      "width": 1080,
+      "height": 1350
+    },
+    "qrSize": {
+      "width": 320,
+      "height": 320
+    },
+    "textNodeCount": 13,
+    "outOfBounds": []
+  },
+  "updatedAt": "2026-11-16T14:40:33+09:00",
+  "latestQRCaptionChange": {
+    "createdNodeIds": [
+      "24:30"
+    ],
+    "createdStyleIds": [
+      "S:1834d6a5fe4487e1173566b5d869fa8c5478814e,"
+    ],
+    "mutatedNodeIds": [
+      "5:28",
+      "5:50",
+      "5:73",
+      "5:29",
+      "5:30",
+      "5:31",
+      "5:32",
+      "5:33",
+      "5:34",
+      "5:35",
+      "5:36",
+      "5:37",
+      "19:28",
+      "19:29",
+      "19:30",
+      "16:25",
+      "16:27",
+      "5:39",
+      "16:24",
+      "16:26",
+      "5:38",
+      "5:40",
+      "5:41",
+      "5:42",
+      "5:43",
+      "5:44",
+      "5:45",
+      "5:46",
+      "24:30",
+      "5:48",
+      "5:47",
+      "I5:50;5:29",
+      "I5:50;5:30",
+      "I5:50;5:31",
+      "I5:50;5:32",
+      "I5:50;5:33",
+      "I5:50;5:34",
+      "I5:50;5:35",
+      "I5:50;5:36",
+      "I5:50;5:37",
+      "I5:50;19:28",
+      "I5:50;19:29",
+      "I5:50;19:30",
+      "I5:50;16:25",
+      "I5:50;16:27",
+      "I5:50;5:39",
+      "I5:50;16:24",
+      "I5:50;16:26",
+      "I5:50;5:38",
+      "I5:50;5:40",
+      "I5:50;5:41",
+      "I5:50;5:42",
+      "I5:50;5:43",
+      "I5:50;5:44",
+      "I5:50;5:45",
+      "I5:50;5:46",
+      "I5:50;24:30",
+      "I5:50;5:48",
+      "I5:50;5:47"
+    ],
+    "mutatedStyleIds": [
+      "S:1834d6a5fe4487e1173566b5d869fa8c5478814e,",
+      "S:ee87362cf100071d12add05e83ae963c4385db64,",
+      "S:48531e23da99afc9d0632991cd11b2cb51635e46,"
+    ],
+    "newNodeIds": {
+      "qrCaptionKR": "24:30"
+    },
+    "newStyleIds": {
+      "qrCaptionKR": "S:1834d6a5fe4487e1173566b5d869fa8c5478814e,"
+    },
+    "beforeProperties": {
+      "직급 KR#19:1": {
+        "type": "TEXT",
+        "value": "과장"
+      },
+      "소속 KR#19:0": {
+        "type": "TEXT",
+        "value": "AI융합본부"
+      },
+      "소속 CN#16:0": {
+        "type": "TEXT",
+        "value": "人工智能融合事业部"
+      },
+      "QR 안내 표시#5:5": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "직급 EN#5:3": {
+        "type": "TEXT",
+        "value": "Manager"
+      },
+      "직급 CN#5:2": {
+        "type": "TEXT",
+        "value": "经理"
+      },
+      "한글 이름 표시#5:4": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "소속 EN#16:1": {
+        "type": "TEXT",
+        "value": "AI Convergence Division"
+      },
+      "이름 KR#5:1": {
+        "type": "TEXT",
+        "value": "조상연"
+      },
+      "이름 EN#5:0": {
+        "type": "TEXT",
+        "value": "Jo Sangyeon"
+      }
+    },
+    "instanceProperties": {
+      "직급 KR#19:1": {
+        "type": "TEXT",
+        "value": "과장"
+      },
+      "소속 KR#19:0": {
+        "type": "TEXT",
+        "value": "AI융합본부"
+      },
+      "소속 CN#16:0": {
+        "type": "TEXT",
+        "value": "人工智能融合事业部"
+      },
+      "QR 안내 표시#5:5": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "직급 EN#5:3": {
+        "type": "TEXT",
+        "value": "Manager"
+      },
+      "직급 CN#5:2": {
+        "type": "TEXT",
+        "value": "经理"
+      },
+      "한글 이름 표시#5:4": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "소속 EN#16:1": {
+        "type": "TEXT",
+        "value": "AI Convergence Division"
+      },
+      "이름 KR#5:1": {
+        "type": "TEXT",
+        "value": "조상연"
+      },
+      "이름 EN#5:0": {
+        "type": "TEXT",
+        "value": "Jo Sangyeon"
+      }
+    },
+    "staffPropertiesPreserved": true,
+    "mainComponentId": "5:28",
+    "cardSize": {
+      "width": 1080,
+      "height": 1350
+    },
+    "headerHeight": 248,
+    "bodyHeight": 1102,
+    "bodyGap": 40,
+    "profileHeight": 396,
+    "qrSize": {
+      "width": 320,
+      "height": 320
+    },
+    "captionRows": [
+      {
+        "id": "24:30",
+        "name": "친구 추가 안내 KR",
+        "text": "스캔하여 위챗 친구 추가",
+        "width": 888,
+        "height": 42,
+        "fontSize": 30,
+        "line": {
+          "unit": "PIXELS",
+          "value": 42
+        },
+        "styleId": "S:1834d6a5fe4487e1173566b5d869fa8c5478814e,"
+      },
+      {
+        "id": "5:48",
+        "name": "친구 추가 안내 EN",
+        "text": "Scan to connect on WeChat",
+        "width": 888,
+        "height": 38,
+        "fontSize": 28,
+        "line": {
+          "unit": "PIXELS",
+          "value": 38
+        },
+        "styleId": "S:48531e23da99afc9d0632991cd11b2cb51635e46,"
+      },
+      {
+        "id": "5:47",
+        "name": "친구 추가 안내 CN",
+        "text": "扫码添加微信",
+        "width": 888,
+        "height": 42,
+        "fontSize": 30,
+        "line": {
+          "unit": "PIXELS",
+          "value": 42
+        },
+        "styleId": "S:ee87362cf100071d12add05e83ae963c4385db64,"
+      }
+    ],
+    "masterTextCount": 14,
+    "outOfBounds": {
+      "master": [],
+      "staff": []
+    }
+  },
+  "latestAlignmentChange": {
+    "createdNodeIds": [],
+    "removedNodeIds": [
+      "19:28",
+      "I5:50;19:28",
+      "16:25",
+      "I5:50;16:25",
+      "16:24",
+      "I5:50;16:24"
+    ],
+    "mutatedNodeIds": [
+      "5:28",
+      "5:50",
+      "5:73",
+      "5:29",
+      "5:30",
+      "5:31",
+      "5:32",
+      "5:33",
+      "5:34",
+      "5:35",
+      "5:36",
+      "5:37",
+      "19:29",
+      "19:30",
+      "16:27",
+      "5:39",
+      "16:26",
+      "5:38",
+      "5:40",
+      "5:41",
+      "5:42",
+      "5:43",
+      "5:44",
+      "5:45",
+      "5:46",
+      "24:30",
+      "5:48",
+      "5:47",
+      "I5:50;5:29",
+      "I5:50;5:30",
+      "I5:50;5:31",
+      "I5:50;5:32",
+      "I5:50;5:33",
+      "I5:50;5:34",
+      "I5:50;5:35",
+      "I5:50;5:36",
+      "I5:50;5:37",
+      "I5:50;19:29",
+      "I5:50;19:30",
+      "I5:50;16:27",
+      "I5:50;5:39",
+      "I5:50;16:26",
+      "I5:50;5:38",
+      "I5:50;5:40",
+      "I5:50;5:41",
+      "I5:50;5:42",
+      "I5:50;5:46",
+      "I5:50;24:30",
+      "I5:50;5:48",
+      "I5:50;5:47"
+    ],
+    "beforeProperties": {
+      "직급 KR#19:1": {
+        "type": "TEXT",
+        "value": "과장"
+      },
+      "소속 KR#19:0": {
+        "type": "TEXT",
+        "value": "AI융합본부"
+      },
+      "소속 CN#16:0": {
+        "type": "TEXT",
+        "value": "人工智能融合事业部"
+      },
+      "QR 안내 표시#5:5": {
+        "type": "BOOLEAN",
+        "value": false
+      },
+      "직급 EN#5:3": {
+        "type": "TEXT",
+        "value": "Manager"
+      },
+      "직급 CN#5:2": {
+        "type": "TEXT",
+        "value": "经理"
+      },
+      "한글 이름 표시#5:4": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "소속 EN#16:1": {
+        "type": "TEXT",
+        "value": "AI Convergence Division"
+      },
+      "이름 KR#5:1": {
+        "type": "TEXT",
+        "value": "조상연"
+      },
+      "이름 EN#5:0": {
+        "type": "TEXT",
+        "value": "Jo Sangyeon"
+      }
+    },
+    "instanceProperties": {
+      "직급 KR#19:1": {
+        "type": "TEXT",
+        "value": "과장"
+      },
+      "소속 KR#19:0": {
+        "type": "TEXT",
+        "value": "AI융합본부"
+      },
+      "소속 CN#16:0": {
+        "type": "TEXT",
+        "value": "人工智能融合事业部"
+      },
+      "QR 안내 표시#5:5": {
+        "type": "BOOLEAN",
+        "value": false
+      },
+      "직급 EN#5:3": {
+        "type": "TEXT",
+        "value": "Manager"
+      },
+      "직급 CN#5:2": {
+        "type": "TEXT",
+        "value": "经理"
+      },
+      "한글 이름 표시#5:4": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "소속 EN#16:1": {
+        "type": "TEXT",
+        "value": "AI Convergence Division"
+      },
+      "이름 KR#5:1": {
+        "type": "TEXT",
+        "value": "조상연"
+      },
+      "이름 EN#5:0": {
+        "type": "TEXT",
+        "value": "Jo Sangyeon"
+      }
+    },
+    "staffPropertiesPreserved": true,
+    "staffQrFillsPreserved": true,
+    "staffQrFills": [
+      {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "imageHash": "e527e59ce2a7fa1ec0682ec518998784a1168c95"
+      }
+    ],
+    "masterGrid": {
+      "id": "5:37",
+      "width": 888,
+      "height": 144,
+      "layoutMode": "GRID",
+      "columnSizes": [
+        {
+          "type": "HUG",
+          "value": 1
+        },
+        {
+          "type": "HUG",
+          "value": 1
+        }
+      ],
+      "rowSizes": [
+        {
+          "type": "HUG",
+          "value": 1
+        },
+        {
+          "type": "HUG",
+          "value": 1
+        },
+        {
+          "type": "HUG",
+          "value": 1
+        }
+      ],
+      "columnGap": 24,
+      "rowGap": 8,
+      "children": [
+        {
+          "id": "19:29",
+          "name": "소속 KR / 변경",
+          "text": "소속 부서",
+          "x": 0,
+          "y": 0,
+          "width": 125,
+          "height": 44,
+          "row": 0,
+          "column": 0,
+          "propertyReferences": {
+            "characters": "소속 KR#19:0"
+          }
+        },
+        {
+          "id": "19:30",
+          "name": "직급 KR / 변경",
+          "text": "직급",
+          "x": 183,
+          "y": 0,
+          "width": 59,
+          "height": 44,
+          "row": 0,
+          "column": 1,
+          "propertyReferences": {
+            "characters": "직급 KR#19:1"
+          }
+        },
+        {
+          "id": "16:27",
+          "name": "소속 EN / 변경",
+          "text": "Department",
+          "x": 0,
+          "y": 52,
+          "width": 159,
+          "height": 40,
+          "row": 1,
+          "column": 0,
+          "propertyReferences": {
+            "characters": "소속 EN#16:1"
+          }
+        },
+        {
+          "id": "5:39",
+          "name": "직급 EN / 변경",
+          "text": "Job Title",
+          "x": 183,
+          "y": 52,
+          "width": 117,
+          "height": 40,
+          "row": 1,
+          "column": 1,
+          "propertyReferences": {
+            "characters": "직급 EN#5:3"
+          }
+        },
+        {
+          "id": "16:26",
+          "name": "소속 CN / 변경",
+          "text": "所属部门",
+          "x": 0,
+          "y": 100,
+          "width": 128,
+          "height": 44,
+          "row": 2,
+          "column": 0,
+          "propertyReferences": {
+            "characters": "소속 CN#16:0"
+          }
+        },
+        {
+          "id": "5:38",
+          "name": "직급 CN / 변경",
+          "text": "职位",
+          "x": 183,
+          "y": 100,
+          "width": 64,
+          "height": 44,
+          "row": 2,
+          "column": 1,
+          "propertyReferences": {
+            "characters": "직급 CN#5:2"
+          }
+        }
+      ],
+      "roleXs": [
+        183,
+        183,
+        183
+      ]
+    },
+    "staffGrid": {
+      "id": "I5:50;5:37",
+      "width": 888,
+      "height": 144,
+      "layoutMode": "GRID",
+      "columnSizes": [
+        {
+          "type": "HUG",
+          "value": 1
+        },
+        {
+          "type": "HUG",
+          "value": 1
+        }
+      ],
+      "rowSizes": [
+        {
+          "type": "HUG",
+          "value": 1
+        },
+        {
+          "type": "HUG",
+          "value": 1
+        },
+        {
+          "type": "HUG",
+          "value": 1
+        }
+      ],
+      "columnGap": 24,
+      "rowGap": 8,
+      "children": [
+        {
+          "id": "I5:50;19:29",
+          "name": "소속 KR / 변경",
+          "text": "AI융합본부",
+          "x": 0,
+          "y": 0,
+          "width": 147,
+          "height": 44,
+          "row": 0,
+          "column": 0,
+          "propertyReferences": {
+            "characters": "소속 KR#19:0"
+          }
+        },
+        {
+          "id": "I5:50;19:30",
+          "name": "직급 KR / 변경",
+          "text": "과장",
+          "x": 347,
+          "y": 0,
+          "width": 59,
+          "height": 44,
+          "row": 0,
+          "column": 1,
+          "propertyReferences": {
+            "characters": "직급 KR#19:1"
+          }
+        },
+        {
+          "id": "I5:50;16:27",
+          "name": "소속 EN / 변경",
+          "text": "AI Convergence Division",
+          "x": 0,
+          "y": 52,
+          "width": 323,
+          "height": 40,
+          "row": 1,
+          "column": 0,
+          "propertyReferences": {
+            "characters": "소속 EN#16:1"
+          }
+        },
+        {
+          "id": "I5:50;5:39",
+          "name": "직급 EN / 변경",
+          "text": "Manager",
+          "x": 347,
+          "y": 52,
+          "width": 120,
+          "height": 40,
+          "row": 1,
+          "column": 1,
+          "propertyReferences": {
+            "characters": "직급 EN#5:3"
+          }
+        },
+        {
+          "id": "I5:50;16:26",
+          "name": "소속 CN / 변경",
+          "text": "人工智能融合事业部",
+          "x": 0,
+          "y": 100,
+          "width": 288,
+          "height": 44,
+          "row": 2,
+          "column": 0,
+          "propertyReferences": {
+            "characters": "소속 CN#16:0"
+          }
+        },
+        {
+          "id": "I5:50;5:38",
+          "name": "직급 CN / 변경",
+          "text": "经理",
+          "x": 347,
+          "y": 100,
+          "width": 64,
+          "height": 44,
+          "row": 2,
+          "column": 1,
+          "propertyReferences": {
+            "characters": "직급 CN#5:2"
+          }
+        }
+      ],
+      "roleXs": [
+        347,
+        347,
+        347
+      ]
+    },
+    "gridBoundVariables": {
+      "gridRowGap": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:5:13"
+      },
+      "gridColumnGap": {
+        "type": "VARIABLE_ALIAS",
+        "id": "VariableID:5:14"
+      }
+    },
+    "mainComponentId": "5:28",
+    "outOfBounds": {
+      "master": [],
+      "staff": []
+    },
+    "profileHeight": 396
+  },
+  "alignmentPilot": {
+    "cases": [
+      {
+        "label": "case-0",
+        "width": 888,
+        "height": 144,
+        "cells": [
+          {
+            "name": "소속 KR / 변경",
+            "text": "짧음",
+            "x": 0,
+            "y": 0,
+            "width": 59,
+            "height": 44,
+            "row": 0,
+            "column": 0
+          },
+          {
+            "name": "직급 KR / 변경",
+            "text": "과장",
+            "x": 88,
+            "y": 0,
+            "width": 59,
+            "height": 44,
+            "row": 0,
+            "column": 1
+          },
+          {
+            "name": "소속 EN / 변경",
+            "text": "AI",
+            "x": 0,
+            "y": 52,
+            "width": 28,
+            "height": 40,
+            "row": 1,
+            "column": 0
+          },
+          {
+            "name": "직급 EN / 변경",
+            "text": "Manager",
+            "x": 88,
+            "y": 52,
+            "width": 120,
+            "height": 40,
+            "row": 1,
+            "column": 1
+          },
+          {
+            "name": "소속 CN / 변경",
+            "text": "部门",
+            "x": 0,
+            "y": 100,
+            "width": 64,
+            "height": 44,
+            "row": 2,
+            "column": 0
+          },
+          {
+            "name": "직급 CN / 변경",
+            "text": "经理",
+            "x": 88,
+            "y": 100,
+            "width": 64,
+            "height": 44,
+            "row": 2,
+            "column": 1
+          }
+        ],
+        "roleXs": [
+          88,
+          88,
+          88
+        ]
+      },
+      {
+        "label": "case-1",
+        "width": 888,
+        "height": 144,
+        "cells": [
+          {
+            "name": "소속 KR / 변경",
+            "text": "AI융합본부",
+            "x": 0,
+            "y": 0,
+            "width": 147,
+            "height": 44,
+            "row": 0,
+            "column": 0
+          },
+          {
+            "name": "직급 KR / 변경",
+            "text": "과장",
+            "x": 347,
+            "y": 0,
+            "width": 59,
+            "height": 44,
+            "row": 0,
+            "column": 1
+          },
+          {
+            "name": "소속 EN / 변경",
+            "text": "AI Convergence Division",
+            "x": 0,
+            "y": 52,
+            "width": 323,
+            "height": 40,
+            "row": 1,
+            "column": 0
+          },
+          {
+            "name": "직급 EN / 변경",
+            "text": "Manager",
+            "x": 347,
+            "y": 52,
+            "width": 120,
+            "height": 40,
+            "row": 1,
+            "column": 1
+          },
+          {
+            "name": "소속 CN / 변경",
+            "text": "人工智能融合事业部",
+            "x": 0,
+            "y": 100,
+            "width": 288,
+            "height": 44,
+            "row": 2,
+            "column": 0
+          },
+          {
+            "name": "직급 CN / 변경",
+            "text": "经理",
+            "x": 347,
+            "y": 100,
+            "width": 64,
+            "height": 44,
+            "row": 2,
+            "column": 1
+          }
+        ],
+        "roleXs": [
+          347,
+          347,
+          347
+        ]
+      },
+      {
+        "label": "case-2",
+        "width": 888,
+        "height": 184,
+        "cells": [
+          {
+            "name": "소속 KR / 변경",
+            "text": "AI융합본부",
+            "x": 0,
+            "y": 0,
+            "width": 147,
+            "height": 44,
+            "row": 0,
+            "column": 0
+          },
+          {
+            "name": "직급 KR / 변경",
+            "text": "과장",
+            "x": 684,
+            "y": 0,
+            "width": 59,
+            "height": 44,
+            "row": 0,
+            "column": 1
+          },
+          {
+            "name": "소속 EN / 변경",
+            "text": "AI Convergence Research and Technology Development Division",
+            "x": 0,
+            "y": 52,
+            "width": 660,
+            "height": 80,
+            "row": 1,
+            "column": 0
+          },
+          {
+            "name": "직급 EN / 변경",
+            "text": "Manager",
+            "x": 684,
+            "y": 52,
+            "width": 120,
+            "height": 40,
+            "row": 1,
+            "column": 1
+          },
+          {
+            "name": "소속 CN / 변경",
+            "text": "人工智能融合事业部",
+            "x": 0,
+            "y": 140,
+            "width": 288,
+            "height": 44,
+            "row": 2,
+            "column": 0
+          },
+          {
+            "name": "직급 CN / 변경",
+            "text": "经理",
+            "x": 684,
+            "y": 140,
+            "width": 64,
+            "height": 44,
+            "row": 2,
+            "column": 1
+          }
+        ],
+        "roleXs": [
+          684,
+          684,
+          684
+        ]
+      },
+      {
+        "label": "case-3",
+        "width": 888,
+        "height": 144,
+        "cells": [
+          {
+            "name": "소속 KR / 변경",
+            "text": "짧음",
+            "x": 0,
+            "y": 0,
+            "width": 59,
+            "height": 44,
+            "row": 0,
+            "column": 0
+          },
+          {
+            "name": "직급 KR / 변경",
+            "text": "과장",
+            "x": 88,
+            "y": 0,
+            "width": 59,
+            "height": 44,
+            "row": 0,
+            "column": 1
+          },
+          {
+            "name": "소속 EN / 변경",
+            "text": "AI",
+            "x": 0,
+            "y": 52,
+            "width": 28,
+            "height": 40,
+            "row": 1,
+            "column": 0
+          },
+          {
+            "name": "직급 EN / 변경",
+            "text": "Manager",
+            "x": 88,
+            "y": 52,
+            "width": 120,
+            "height": 40,
+            "row": 1,
+            "column": 1
+          },
+          {
+            "name": "소속 CN / 변경",
+            "text": "部门",
+            "x": 0,
+            "y": 100,
+            "width": 64,
+            "height": 44,
+            "row": 2,
+            "column": 0
+          },
+          {
+            "name": "직급 CN / 변경",
+            "text": "经理",
+            "x": 88,
+            "y": 100,
+            "width": 64,
+            "height": 44,
+            "row": 2,
+            "column": 1
+          }
+        ],
+        "roleXs": [
+          88,
+          88,
+          88
+        ]
+      }
+    ],
+    "allRolesAligned": true,
+    "columnMovedOnContent": true,
+    "columnShrankAfterChange": true,
+    "gridRows": [
+      {
+        "type": "HUG",
+        "value": 1
+      },
+      {
+        "type": "HUG",
+        "value": 1
+      },
+      {
+        "type": "HUG",
+        "value": 1
+      }
+    ],
+    "gridColumns": [
+      {
+        "type": "HUG",
+        "value": 1
+      },
+      {
+        "type": "HUG",
+        "value": 1
+      }
+    ],
+    "createdNodeIds": [
+      "29:30",
+      "29:31",
+      "29:32",
+      "29:33",
+      "29:34",
+      "29:35",
+      "29:36"
+    ],
+    "removedNodeIds": [
+      "29:30",
+      "29:31",
+      "29:32",
+      "29:33",
+      "29:34",
+      "29:35",
+      "29:36"
+    ],
+    "temporaryGridRemoved": true
+  },
+  "latestWebsiteHeaderChange": {
+    "createdNodeIds": [
+      "35:28",
+      "35:29",
+      "35:30",
+      "35:31",
+      "35:32",
+      "35:33"
+    ],
+    "createdStyleIds": [
+      "S:70b15147334c292cc31da9fb7fd7e44183c6bdfc,",
+      "S:2130a66775b55d582cfd1072b6d37e8a41f0b44e,"
+    ],
+    "createdVariableIds": [
+      "VariableID:35:25"
+    ],
+    "newNodeIds": {
+      "brandLeft": "35:28",
+      "brandRight": "35:30",
+      "websiteUrl": "35:29",
+      "websiteQrFrame": "35:31",
+      "websiteQrImage": "35:32",
+      "websiteLabel": "35:33"
+    },
+    "newStyleIds": {
+      "websiteURL": "S:70b15147334c292cc31da9fb7fd7e44183c6bdfc,",
+      "websiteLabel": "S:2130a66775b55d582cfd1072b6d37e8a41f0b44e,"
+    },
+    "newVariableIds": {
+      "onBrand": "VariableID:35:25"
+    },
+    "mutatedNodeIds": [
+      "5:28",
+      "5:50",
+      "5:73",
+      "5:29",
+      "35:28",
+      "5:30",
+      "35:29",
+      "35:30",
+      "35:31",
+      "35:32",
+      "35:33",
+      "5:31",
+      "5:32",
+      "5:33",
+      "5:34",
+      "5:35",
+      "5:36",
+      "5:37",
+      "19:29",
+      "19:30",
+      "16:27",
+      "5:39",
+      "16:26",
+      "5:38",
+      "5:40",
+      "5:41",
+      "5:42",
+      "5:43",
+      "5:44",
+      "5:45",
+      "5:46",
+      "24:30",
+      "5:48",
+      "5:47",
+      "I5:50;5:29",
+      "I5:50;35:28",
+      "I5:50;5:30",
+      "I5:50;35:29",
+      "I5:50;35:30",
+      "I5:50;35:31",
+      "I5:50;35:32",
+      "I5:50;35:33",
+      "I5:50;5:31",
+      "I5:50;5:32",
+      "I5:50;5:33",
+      "I5:50;5:34",
+      "I5:50;5:35",
+      "I5:50;5:36",
+      "I5:50;5:37",
+      "I5:50;19:29",
+      "I5:50;19:30",
+      "I5:50;16:27",
+      "I5:50;5:39",
+      "I5:50;16:26",
+      "I5:50;5:38",
+      "I5:50;5:40",
+      "I5:50;5:41",
+      "I5:50;5:42",
+      "I5:50;5:46",
+      "I5:50;24:30",
+      "I5:50;5:48",
+      "I5:50;5:47"
+    ],
+    "beforeProperties": {
+      "직급 KR#19:1": {
+        "type": "TEXT",
+        "value": "과장"
+      },
+      "소속 KR#19:0": {
+        "type": "TEXT",
+        "value": "AI융합본부"
+      },
+      "소속 CN#16:0": {
+        "type": "TEXT",
+        "value": "人工智能融合事业部"
+      },
+      "QR 안내 표시#5:5": {
+        "type": "BOOLEAN",
+        "value": false
+      },
+      "직급 EN#5:3": {
+        "type": "TEXT",
+        "value": "Manager"
+      },
+      "직급 CN#5:2": {
+        "type": "TEXT",
+        "value": "经理"
+      },
+      "한글 이름 표시#5:4": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "소속 EN#16:1": {
+        "type": "TEXT",
+        "value": "AI Convergence Division"
+      },
+      "이름 KR#5:1": {
+        "type": "TEXT",
+        "value": "조상연"
+      },
+      "이름 EN#5:0": {
+        "type": "TEXT",
+        "value": "Jo Sangyeon"
+      }
+    },
+    "instanceProperties": {
+      "직급 KR#19:1": {
+        "type": "TEXT",
+        "value": "과장"
+      },
+      "소속 KR#19:0": {
+        "type": "TEXT",
+        "value": "AI융합본부"
+      },
+      "소속 CN#16:0": {
+        "type": "TEXT",
+        "value": "人工智能融合事业部"
+      },
+      "QR 안내 표시#5:5": {
+        "type": "BOOLEAN",
+        "value": false
+      },
+      "직급 EN#5:3": {
+        "type": "TEXT",
+        "value": "Manager"
+      },
+      "직급 CN#5:2": {
+        "type": "TEXT",
+        "value": "经理"
+      },
+      "한글 이름 표시#5:4": {
+        "type": "BOOLEAN",
+        "value": true
+      },
+      "소속 EN#16:1": {
+        "type": "TEXT",
+        "value": "AI Convergence Division"
+      },
+      "이름 KR#5:1": {
+        "type": "TEXT",
+        "value": "조상연"
+      },
+      "이름 EN#5:0": {
+        "type": "TEXT",
+        "value": "Jo Sangyeon"
+      }
+    },
+    "staffPropertiesPreserved": true,
+    "staffPersonalQrPreserved": true,
+    "logoFillsPreserved": true,
+    "header": {
+      "width": 1080,
+      "height": 288
+    },
+    "body": {
+      "width": 1080,
+      "height": 1062
+    },
+    "logo": {
+      "width": 520,
+      "height": 148.68234252929688
+    },
+    "websiteQr": {
+      "outerWidth": 198,
+      "outerHeight": 198,
+      "imageWidth": 150,
+      "imageHeight": 150,
+      "padding": 24
+    },
+    "outOfBounds": [],
+    "textNodeCount": 16
+  },
+  "websiteQrSource": {
+    "sourcePath": "90_작업 공간/중국출장/명함/QR_Cellbig_website.png",
+    "sourceSha256": "26caf7157653608da8f147132833cbbda34119e0ad7d13a5298c203d2e7f24ab",
+    "sourceSize": [
+      709,
+      709
+    ],
+    "payload": "http://www.cellbig.com",
+    "moduleCount": 25,
+    "quietZoneModules": 4,
+    "renderedSize": 198,
+    "modulePixels": 6,
+    "sourceModuleMatch": true,
+    "normalPolarityDecode": "http://www.cellbig.com",
+    "darkModuleCount": 344
+  },
+  "websiteQrUpload": {
+    "success": true,
+    "imageHash": "3f851a2ad227fd01172e4574605609ab071ea514",
+    "sizeBytes": 7066,
+    "contentType": "image/png",
+    "placedOnNodeId": "35:32"
+  },
+  "fileRelocations": [
+    {
+      "date": "2026-11-16",
+      "from": "90_작업 공간/중국 출장 디지털 명함",
+      "to": "90_작업 공간/중국출장/명함/제작 기록",
+      "reason": "Consolidate China trip work under the trip folder",
+      "historicalPaths": "Preserved in history; resolve the old prefix through this relocation mapping",
+      "verification": {
+        "movedFiles": 11,
+        "unchangedPngFiles": 9,
+        "pngSha256Matched": true,
+        "newVisualReview": false
+      }
+    }
+  ]
+}

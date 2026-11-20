@@ -1,0 +1,22 @@
+# Obsidian session state
+.obsidian/workspace*.json
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Local archive
+/99_보관소/
+
+# Temporary working files
+/tmp/
+
+# Existing user-provided China trip source files
+/90_작업 공간/중국출장/연관자료/
+/90_작업 공간/중국출장/명함/Cellbig_logo_white.png
+/90_작업 공간/중국출장/명함/QR_Cellbig_website.png
+/90_작업 공간/중국출장/명함/QR_Cellbig_website_magenta.png
+/90_작업 공간/중국출장/명함/QR_Cellbig_website_white.png
+/90_작업 공간/중국출장/명함/WeChatQR.png
+/90_작업 공간/중국출장/명함/디지털명함.png
+/90_작업 공간/중국출장/명함/셀빅 명함 가이드_210430.pdf

@@ -1,0 +1,4 @@
+* text=auto
+
+# Source PDFs are stored with Git LFS.
+"/91_PDF 원본/*.pdf" filter=lfs diff=lfs merge=lfs -text
